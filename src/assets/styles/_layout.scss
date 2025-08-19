@@ -1,6 +1,5 @@
 .header, .section{
    padding: var(--padding);
-
 }
 
 .hero{
@@ -24,7 +23,7 @@
 }
 
 @media (min-width: 1140px){
-   .header, .section{
+   .section{
       padding: 10px calc(50vw - 570px);
    }
 
