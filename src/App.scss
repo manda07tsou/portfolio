@@ -1,4 +1,6 @@
 @import "./assets/styles/reset";
+@import "./assets/styles/variable";
+@import "./assets/styles/utils";
 
 @font-face {
   font-family:"Inter";
@@ -15,4 +17,11 @@
 body{
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  background-color: var(--bg);
+  color: var(--color);
+  line-height: 1.6;
 }
+
+
+@import "./assets/styles/template";
+@import "./assets/styles/layout";
