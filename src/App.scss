@@ -1,6 +1,9 @@
-@import "./assets/styles/reset";
-@import "./assets/styles/variable";
-@import "./assets/styles/utils";
+@use "./assets/styles/reset";
+@use "./assets/styles/variable";
+@use "./assets/styles/utils";
+@use "./assets/styles/template";
+@use "./assets/styles/layout";
+@use "./assets/styles/header";
 
 @font-face {
   font-family:"Inter";
@@ -20,9 +23,5 @@ body{
   background-color: var(--bg);
   color: var(--color);
   line-height: 1.6;
+  height: 2000px;
 }
-
-
-@import "./assets/styles/template";
-@import "./assets/styles/layout";
-@import "./assets/styles/header";
