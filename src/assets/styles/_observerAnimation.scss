@@ -1,0 +1,33 @@
+.fade{
+   opacity: 0;
+   transform: translateY(30px);
+   transition-duration: .5s;
+   transition-timing-function: cubic-bezier(.5,0,0,1);
+}
+
+.in{
+   opacity: 1!important;
+   transform: translateY(0px)!important;
+}
+
+.rotate{
+   transform: rotateY(90deg);
+   transition-duration: .5s;
+}
+
+.rotate-in{
+   transform: rotateY(0);
+}
+
+
+.text-in-view{
+   animation: textAnimation .3s ease-in-out;
+}
+
+@keyframes textAnimation {
+   from{
+   }
+
+   to{
+   }
+}

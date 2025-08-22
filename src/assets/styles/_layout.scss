@@ -2,10 +2,16 @@
    padding: var(--padding);
 }
 
+.section__header{
+   margin-bottom: space(--padding);
+}
 .section__title{
    font-size: 2em;
 }
 
+.section__body{
+   margin-top: 40px;
+}
 
 @media (min-width: 1140px){
    .section{

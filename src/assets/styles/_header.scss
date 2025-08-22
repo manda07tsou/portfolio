@@ -44,6 +44,11 @@
    display: flex;
    align-items: center;
    font-size: 100%;
+   transition: .3s;
+
+   &:hover{
+      color: var(--primary)!important;
+   }
 
    img{
       width: 1em;
@@ -59,7 +64,7 @@
 }
 
 .hero__title{
-   font-size: 3em;
+   font-size: 3.3em;
 }
 
 .hero__subtitle{
@@ -118,7 +123,8 @@
       }
    }
    .hero{
-      text-align: start;
+      text-align: center;
+
    }
 
    .hero__body{
