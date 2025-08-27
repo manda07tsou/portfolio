@@ -13,7 +13,6 @@ export function Projects(){
             <div className={`section__title fade ${observerClass}`} ref={ref}>Mes réalisations</div>
          </div>
          <div className="section__body">
-            <ProjectItem/>
          </div>
       </div>
    )
