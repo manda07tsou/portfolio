@@ -57,9 +57,12 @@ export function SkillTree(){
    )
 }
 
-export function SkillCardItem({title, skills}){
+export function SkillCardItem({title, skills, delay}){
+   const  { ref , inView }  =  useInView (observerOptions);
+   const observerClass = inView ? "in":""
+
    return (
-      <div className="skill__card">
+      <div ref={ref} className={`skill__card fade ${observerClass}`} style={{transitionDelay: delay}}>
          <div className="skill__card-title">{title}</div>
          <div className="skill__card-body">
             {skills?.map(skill => (
@@ -74,19 +77,12 @@ export function SkillCardItem({title, skills}){
 }
 
 export function SkillCard(){
-   const  { ref , inView }  =  useInView (observerOptions);
-   const observerClass = inView ? "in":""
+
    return (
       <div className="skill__grid">
-            <div ref={ref} className={`fade ${observerClass}`}>
-               {skills?.frontend && <SkillCardItem title="Frontend" skills={skills?.frontend}/>}
-            </div>
-            <div ref={ref} className={`fade ${observerClass}`} style={{transitionDelay: '.1s'}}>
-               {skills?.frontend && <SkillCardItem title="Backend" skills={skills?.backend}/>}
-            </div>
-            <div ref={ref} className={`fade ${observerClass}`}  style={{transitionDelay: '.2s'}}>
-               {skills?.frontend && <SkillCardItem title="Outils" skills={skills?.outils}/>}
-            </div>
+         {skills?.frontend && <SkillCardItem title="Frontend" skills={skills?.frontend} delay="0s"/>}
+         {skills?.frontend && <SkillCardItem title="Backend" skills={skills?.backend} delay=".1s"/>}
+         {skills?.frontend && <SkillCardItem title="Outils" skills={skills?.outils} delay=".2s"/>}
       </div>
    )
 }

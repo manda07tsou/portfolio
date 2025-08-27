@@ -1,9 +1,27 @@
 .skill__grid{
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-   gap: 50px;
+   column-gap: 40px;
+   row-gap: 60px;
 }
 
+.skill__item{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: .5em;
+
+   .skill__item-title{
+      font-size: .9em;
+   }
+
+   .icon{
+      background-color: transparent;
+      color: var(--primary);
+      width:2em;
+      height: 2em;
+   }
+}
 
 .skill__tree{
    display: flex;
@@ -36,25 +54,6 @@
       border-radius: 5px;
       width: 100%;
    }
-   
-   .skill__item{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: .5em;
-   
-      .skill__item-title{
-         font-size: .9em;
-      }
-   
-      .icon{
-         background-color: transparent;
-         color: var(--primary);
-         width:2em;
-         height: 2em;
-      }
-   }
-
 }
 
 .skill__card{
@@ -70,6 +69,7 @@
       background-color: var(--primary);
       height: 80px;
       width: 80px;
+      font-weight: bold;
       border-radius: 50%;
       display: flex;
       align-items: center;

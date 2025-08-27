@@ -2,51 +2,51 @@
    "frontend":[
       {
          "id":1,
-         "title": "HTML",
+         "title": "Html",
          "icon": "icon-html"
       },
       {
          "id":2,
-         "title":"CSS",
+         "title":"Css",
          "icon": "icon-css"
       },
       {
          "id":5,
-         "title":"JAVASCRIPT",
+         "title":"Javascript",
          "icon": "icon-javascript"
       },
       {
          "id":6,
-         "title":"REACT",
+         "title":"React",
          "icon": "icon-react"
       }
    ],
    "backend":[
       {
          "id":3,
-         "title":"PHP",
+         "title":"Php",
          "icon": "icon-php"
       },
       {
          "id":4,
-         "title":"SYMFONY",
+         "title":"Symfony",
          "icon": "icon-symfony"
       }
    ],
    "outils":[
       {
          "id":3,
-         "title":"GIT",
+         "title":"Git",
          "icon": "icon-git"
       },
       {
          "id":4,
-         "title":"SYMFONY",
+         "title":"Symfony",
          "icon": "icon-symfony"
       },
       {
          "id":5,
-         "title":"JAVASCRIPT",
+         "title":"Javascript",
          "icon": "icon-javascript"
       }
    ]
