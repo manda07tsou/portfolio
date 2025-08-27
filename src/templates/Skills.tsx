@@ -38,9 +38,9 @@ export function Skill({title, skills, delay}){
       <div className="skill__connector"></div>
       <div className={`skill__card`}>
          {skills.map(skill => (
-            <div key={skill.id}>
-               {skill.title}
+            <div key={skill.id} className="skill__item">
                <Icon name={skill?.icon}/>
+               <div className="skill__item-title">{skill.title}</div>
             </div>
          ))}
       </div>

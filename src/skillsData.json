@@ -11,6 +11,11 @@
          "icon": "icon-css"
       },
       {
+         "id":5,
+         "title":"JAVASCRIPT",
+         "icon": "icon-javascript"
+      },
+      {
          "id":6,
          "title":"REACT",
          "icon": "icon-react"
@@ -26,18 +31,13 @@
          "id":4,
          "title":"SYMFONY",
          "icon": "icon-symfony"
-      },
-      {
-         "id":5,
-         "title":"JAVASCRIPT",
-         "icon": "icon-js"
       }
    ],
    "outils":[
       {
          "id":3,
-         "title":"PHP",
-         "icon": "icon-php"
+         "title":"GIT",
+         "icon": "icon-git"
       },
       {
          "id":4,
@@ -47,7 +47,7 @@
       {
          "id":5,
          "title":"JAVASCRIPT",
-         "icon": "icon-js"
+         "icon": "icon-javascript"
       }
    ]
 }
