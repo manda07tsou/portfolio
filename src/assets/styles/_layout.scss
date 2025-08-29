@@ -5,7 +5,9 @@
 .section__header{
    margin-bottom: space(--padding);
 }
+
 .section__title{
+   font-weight: 500;
    font-size: 2em;
 }
 
@@ -15,6 +17,6 @@
 
 @media (min-width: 1140px){
    .section{
-      padding: 100px calc(50vw - 570px);
+      padding: 100px var(--container-padding);
    }
 }

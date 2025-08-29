@@ -5,6 +5,7 @@ import { createPortal } from "react-dom"
 export function Dialog({
    isOpen, 
    onClose,
+   closedBtn=false,
    className='',
    children
 }){
@@ -38,6 +39,9 @@ export function Dialog({
          {isOpen && createPortal(
             <div className="dialog-overlay" ref={dialogShadow}>
                <div className={`dialog ${className}`} ref={dialog}>
+                  {closedBtn &&
+                     <div className="dialog__closed" onClick={onClose}>X</div>
+                  }
                   {children}
                </div>
             </div>,

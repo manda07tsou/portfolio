@@ -31,7 +31,7 @@
    .skill__connector{
       width: 10px;
       height: 15px;
-      background-color: var(--bg-light);
+      background-color: rgb(var(--bg-light));
    }
    
    .skill__title{
@@ -39,7 +39,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: var(--bg-light);
+      background-color: rgb(var(--bg-light));
       font-size: 1.2em;
       width: 200px;
       padding: .3em;
@@ -47,7 +47,7 @@
    }
    
    .skill__card{
-      background-color: var(--bg-light);
+      background-color: rgb(var(--bg-light));
       padding: 1em;
       display: grid;
       grid-template-columns: repeat(4,1fr);
@@ -58,7 +58,7 @@
 
 .skill__card{
    position: relative;
-   background-color: var(--bg-light);
+   background-color: rgb(var(--bg-light));
    border: 1px solid rgb(var(--primary));
 
    .skill__card-title{
@@ -74,7 +74,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 0 0 20px var(--bg);
+      box-shadow: 0 0 0 20px rgb(var(--bg));
       animation: boxShadow 2s linear infinite;
    }
 

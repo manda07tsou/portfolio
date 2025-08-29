@@ -5,7 +5,7 @@
       "technos": ["Symfony","React","Meilisearch","Mysql"],
       "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
       "coverImage":"gmao.png",
-      "images":["gmao1","gmao2","gmao3"]
+      "images":["gmao1.png","gmao2.png","gmao3.png"]
    },
    {
       "id":2,
@@ -13,6 +13,6 @@
       "technos": ["Symfony","React","Meilisearch","Mysql"],
       "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
       "coverImage":"gmao.png",
-      "images":["gmao1","gmao2"]
+      "images":["gmao1.png","gmao2.png"]
    }
 ]

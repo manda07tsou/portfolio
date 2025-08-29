@@ -45,6 +45,6 @@ export function ProjectItem({data}){
             <button className="btn btn-outlined-primary mt-3" onClick={handleOpen}>Details</button>
          </div>
       </div>
-      <ShowProjectDialog isOpen={isOpen} onClose={handleClose}/>
+      <ShowProjectDialog isOpen={isOpen} onClose={handleClose} project={data}/>
    </>
 }

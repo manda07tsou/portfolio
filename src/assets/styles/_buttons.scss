@@ -7,6 +7,11 @@
    text-transform: uppercase;
    cursor: pointer;
    border: 1px solid transparent;
+   transition: .2s;
+
+   &:hover{
+      filter: contrast(.8);
+   }
 }
 
 .btn-primary{
@@ -17,5 +22,10 @@
 .btn-outlined-primary{
    border-color: rgb(var(--primary));
    color: rgb(var(--primary));
-   background-color: transparent!important;
+   background-color: transparent;
+
+   &:hover{
+      background-color: rgb(var(--primary))!important;
+      color: white;
+   }
 }
