@@ -36,10 +36,10 @@
 }
 
 .dialog__header{
+   background-color: var(--bg-light, #fff);
    position: sticky;
    top: 0;
    z-index: 100;
-   // background-color: white;
    padding: 1em calc(var(--dialog-padding) * 2);
    border-bottom: 1px solid var(--border);
 }
@@ -70,6 +70,11 @@
    width: 700px;
 }
 
+.dialog-full{
+   width: 100%;
+   height: 100%;
+   bottom: 0;
+}
 
 @media (max-width: 720px){
    .dialog-lg{

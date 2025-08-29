@@ -18,7 +18,12 @@ export function Skills(){
    </section>
 }
 
-export function SkillTreeItem({title, skills, delay}){
+interface SkillItem{
+   title:string,
+   skills: [],
+   delay: string
+}
+export function SkillTreeItem({title , skills, delay}:SkillItem){
    const  { ref , inView }  =  useInView (observerOptions);
    const observerClass = inView ? `rotate-in`:''
    
@@ -57,7 +62,7 @@ export function SkillTree(){
    )
 }
 
-export function SkillCardItem({title, skills, delay}){
+export function SkillCardItem({title, skills, delay}:SkillItem){
    const  { ref , inView }  =  useInView (observerOptions);
    const observerClass = inView ? "in":""
 

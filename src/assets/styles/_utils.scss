@@ -1,9 +1,11 @@
+@use "./functions" as *;
+
 .uppercase{
    text-transform: uppercase;
 }
 
 .text-warning{
-   color: var(--primary);
+   color: rgb(var(--primary));
 }
 
 .text-center{
@@ -20,7 +22,7 @@
     }
 
     .mt-#{$i}{
-        margin-top: space(#{$i});
+        margin-top: space(#{$i})!important;
     }
 
     .mb-#{$i}{

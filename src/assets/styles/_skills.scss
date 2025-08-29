@@ -17,7 +17,7 @@
 
    .icon{
       background-color: transparent;
-      color: var(--primary);
+      color: rgb(var(--primary));
       width:2em;
       height: 2em;
    }
@@ -43,7 +43,7 @@
       font-size: 1.2em;
       width: 200px;
       padding: .3em;
-      color: var(--primary);
+      color: rgb(var(--primary));
    }
    
    .skill__card{
@@ -59,14 +59,14 @@
 .skill__card{
    position: relative;
    background-color: var(--bg-light);
-   border: 1px solid var(--primary);
+   border: 1px solid rgb(var(--primary));
 
    .skill__card-title{
       position: absolute;
       top: 0;
       left: 50%;
       transform: translate(-50%, -40%);
-      background-color: var(--primary);
+      background-color: rgb(var(--primary));
       height: 80px;
       width: 80px;
       font-weight: bold;
@@ -87,7 +87,7 @@
 
    .icon{
       background-color: transparent;
-      color: var(--primary);
+      color: rgb(var(--primary));
       width:2em;
       height: 2em;
    }

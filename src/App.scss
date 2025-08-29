@@ -1,12 +1,18 @@
 @use "./assets/styles/reset";
 @use "./assets/styles/variable";
+@use "./assets/styles/observerAnimation";
+
+//components
 @use "./assets/styles/utils";
-@use "./assets/styles/layout";
 @use "./assets/styles/template";
+@use "./assets/styles/layout";
 @use "./assets/styles/buttons";
+@use "./assets/styles/badge";
+
+//pages
 @use "./assets/styles/header";
 @use "./assets/styles/skills";
-@use "./assets/styles/observerAnimation";
+@use "./assets/styles/projects";
 
 
 @font-face {
@@ -15,16 +21,23 @@
   font-weight: 400;
 }
 
+@font-face{
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter_18pt-Medium.ttf");
+  font-weight: 500;
+}
+
 @font-face {
   font-family:"Inter";
-  src: url('./assets/fonts/Inter_18pt-Regular.ttf');
-  font-weight: 700;
+  src: url('./assets/fonts/Inter_18pt-SemiBold.ttf');
+  font-weight: 600;
 }
 
 body{
   font-family: "Inter", sans-serif;
+  font-weight: 400;
   font-size: 15px;
-  background-color: var(--bg);
+  background-color: rgb(var(--bg));
   color: var(--color);
   line-height: 1.6;
   height: 2000px;

@@ -1,0 +1,11 @@
+.badge{
+   padding: .2em .6em;
+   border-radius: 50px;
+   font-size: .75em;
+   font-weight: bold;
+}
+
+.badge-primary{
+   background-color: rgb(var(--primary) / .15);
+   color: rgb(var(--primary));
+}

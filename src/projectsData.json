@@ -1,0 +1,18 @@
+[
+   {
+      "id":1,
+      "title": "Gmao mei",
+      "technos": ["Symfony","React","Meilisearch","Mysql"],
+      "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
+      "coverImage":"gmao.png",
+      "images":["gmao1","gmao2","gmao3"]
+   },
+   {
+      "id":2,
+      "title": "Université",
+      "technos": ["Symfony","React","Meilisearch","Mysql"],
+      "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
+      "coverImage":"gmao.png",
+      "images":["gmao1","gmao2"]
+   }
+]

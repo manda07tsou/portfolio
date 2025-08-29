@@ -1,5 +1,5 @@
 .header__container{
-   background: linear-gradient(rgb(46, 46, 56, .8) 70%, var(--bg));
+   background: linear-gradient(rgb(var(--bg) / .8) 10%, rgb(var(--bg)));
    position: relative;
 
    &::after{
@@ -28,7 +28,7 @@
 .logo{
    font-size: 1.4em;
    transform:skew(180deg 90deg);
-   color: var(--primary);
+   color: rgb(var(--primary));
 }
 
 .header__nav{
@@ -47,7 +47,7 @@
    transition: .3s;
 
    &:hover{
-      color: var(--primary)!important;
+      color: rgb(var(--primary))!important;
    }
 
    img{
