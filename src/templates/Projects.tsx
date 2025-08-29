@@ -1,35 +1,33 @@
 import { useInView } from "react-intersection-observer"
 import { observerOptions } from "../config"
-import {useDialog} from "../components/Dialog/hooks/hooks"
-import { ShowProjectDialog } from "../modules/Projects/ShowProjectDialog"
 import projectsData from "../projectsData.json";
-import { Icon } from "../components/icons/icon";
-import { useRef } from "react";
+import { ShowProjectAction } from "../modules/Projects/ShowProjectAction";
 
 export function Projects(){
    const {ref, inView} = useInView(observerOptions)
    const observerClass = inView ? 'in':''
-   
+
+
    return (
       <div className="section">
          <div className="section__header">
             <div className={`section__title fade ${observerClass}`} ref={ref}>Mes réalisations</div>
          </div>
          <div className="section__body project__grid">
-            {projectsData.map(project => (
-               <ProjectItem data={project}/>
+            {projectsData.map((project, index) => (
+               <ProjectItem data={project} index={index}/>
             ))}
          </div>
       </div>
    )
 }
 
-export function ProjectItem({data}){
-   const {isOpen, handleOpen, handleClose} = useDialog(false)
+export function ProjectItem({data, index}){
+   const {ref, inView} = useInView(observerOptions)
+   const observerClass = inView ? 'in':''
 
-   
    return <>
-      <div className="project">
+      <div className={`project fade ${observerClass}`} ref={ref} style={{transitionDelay: `.${index - 1}s`}}>
          <div className="project__image">
             <img src={`/src/assets/images/projects/${data.coverImage}`} alt="image__project" />
          </div>
@@ -42,9 +40,8 @@ export function ProjectItem({data}){
                ))}
             </div>
             <div className="project__description">{data.description}</div>
-            <button className="btn btn-outlined-primary mt-3" onClick={handleOpen}>Details</button>
+            <ShowProjectAction project={data}/>
          </div>
       </div>
-      <ShowProjectDialog isOpen={isOpen} onClose={handleClose} project={data}/>
    </>
 }
