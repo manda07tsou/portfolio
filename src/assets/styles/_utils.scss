@@ -81,3 +81,8 @@
             column-gap: space(#{$i});
     }
 }
+
+.flex{
+    display: flex;
+    align-items: center;
+}

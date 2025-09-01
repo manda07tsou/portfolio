@@ -1,15 +1,14 @@
+//mobil
 .project__grid{
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
    gap: 2em;
 }
 
-
 .project{
    display: flex;
    flex-direction: column;
-   background-color: var(--bg-light);
-   border-radius: 5px;
+   background-color: rgb(var(--bg-light));
    overflow: hidden;
 }
 
@@ -17,10 +16,6 @@
    transition: .5s;
    bottom: 0;
    padding: 1em;
-}
-
-.project__title{
-   font-size: 1.6em;
 }
 
 .project__technos{
@@ -47,6 +42,7 @@
    padding: 100px var(--container-padding);
 }
 
+
 .project:hover{
    border:1px solid var(--primary);
 }
@@ -54,7 +50,25 @@
 .project__images{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   gap: 40px;
+   gap: 10px;
+
+   img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+
+.project__detail-header{
+   border-bottom: 1px solid rgb(var(--primary));
+   padding-bottom: 2em;
+}
+
+.project__detail-body{
+   // display: grid;
+   // grid-template-columns: 2fr 1fr;
+   // column-gap:50px;
+   // padding-top: 2em;
 }
 
 .project-dialog{
@@ -74,3 +88,5 @@
       opacity: 1;
    }
 }
+
+//pc

@@ -11,43 +11,89 @@
          "icon": "icon-css"
       },
       {
-         "id":5,
+         "id":3,
          "title":"Javascript",
          "icon": "icon-javascript"
       },
       {
-         "id":6,
+         "id":4,
          "title":"React",
          "icon": "icon-react"
+      },
+      {
+         "id":5,
+         "title": "Typescript",
+         "icon": "icon-typescript"
+      },
+      {
+         "id":6,
+         "title": "Bootstrap",
+         "icon": "icon-bootstrap"
+      },
+      {
+         "id":7,
+         "title":"Tailwind",
+         "icon": "icon-tailwind"
       }
    ],
    "backend":[
       {
-         "id":3,
+         "id":1,
          "title":"Php",
          "icon": "icon-php"
       },
       {
-         "id":4,
+         "id":2,
          "title":"Symfony",
          "icon": "icon-symfony"
+      },
+      {
+         "id":3,
+         "title":"Mysql",
+         "icon": "icon-mysql"
+      },
+      {
+         "id":4,
+         "title": "Postgresql",
+         "icon": "icon-postgresql"
+      },
+      {
+         "id":5,
+         "title": "Rest",
+         "icon": "icon-apiRest"
+      },
+      {
+         "id":6,
+         "title": "Meilisearch",
+         "icon": "icon-meilisearch"
       }
+      
    ],
    "outils":[
       {
-         "id":3,
+         "id":1,
          "title":"Git",
          "icon": "icon-git"
       },
       {
+         "id":2,
+         "title":"Github",
+         "icon": "icon-github"
+      },
+      {
+         "id":3,
+         "title":"Trello",
+         "icon": "icon-trello"
+      },
+      {
          "id":4,
-         "title":"Symfony",
-         "icon": "icon-symfony"
+         "title": "Apache",
+         "icon": "icon-apache"
       },
       {
          "id":5,
-         "title":"Javascript",
-         "icon": "icon-javascript"
+         "title": "Postman",
+         "icon": "icon-postman"
       }
    ]
 }

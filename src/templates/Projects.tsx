@@ -33,7 +33,6 @@ export function ProjectItem({data, index}){
          </div>
          <div className="project__body">
             <div className="project__title">{data.title}</div>
-            {/* <Icon name={"github"}/> */}
             <div className="project__technos">
                {data.technos.map(techno => (
                   <span className="badge badge-primary">{techno}</span>
