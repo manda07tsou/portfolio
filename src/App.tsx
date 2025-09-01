@@ -1,9 +1,13 @@
 import './App.scss'
+import { BackTop } from './components/backtop/BackTop'
 import { Home } from './Home'
 
 function App() {
   return (
-    <Home/>
+    <>
+      <Home/>
+      <BackTop/>
+    </>
   )
 }
 

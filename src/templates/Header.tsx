@@ -11,10 +11,10 @@ export function Header(){
          <header className={`header ${headerClass}`}>
             <div className="logo">RHj</div>
             <nav className="header__nav">
-               <a href="#" className="nav__item">Home</a>
-               <a href="#" className="nav__item">Compétences</a>
-               <a href="#" className="nav__item">Projets</a>
-               <a href="#" className="nav__item">Me retrouver</a>
+               <a href="#home" className="nav__item">Home</a>
+               <a href="#skills" className="nav__item">Compétences</a>
+               <a href="#projects" className="nav__item">Projets</a>
+               <a href="#contacts" className="nav__item">Me retrouver</a>
             </nav>
             <Burger isOpen={isNavOpen} onOpen={() => {setIsNavOpen(!isNavOpen)}}/>
          </header>

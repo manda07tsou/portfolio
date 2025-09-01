@@ -34,6 +34,10 @@
   font-weight: 600;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -41,6 +45,6 @@ body{
   background-color: rgb(var(--bg));
   color: var(--color);
   line-height: 1.6;
-  height: 2000px;
+  height: 4000px;
   width: 100%;
 }

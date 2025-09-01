@@ -9,7 +9,7 @@ export function Projects(){
 
 
    return (
-      <div className="section">
+      <div className="section" id="projects">
          <div className="section__header">
             <div className={`section__title fade ${observerClass}`} ref={ref}>Mes réalisations</div>
          </div>
