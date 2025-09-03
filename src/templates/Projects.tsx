@@ -32,7 +32,7 @@ export function ProjectItem({data, index}){
             <img src={`/src/assets/images/projects/${data.coverImage}`} alt="image__project" />
          </div>
          <div className="project__body">
-            <div className="project__title">{data.title}</div>
+            <h5 className="project__title">{data.title}</h5>
             <div className="project__technos">
                {data.technos.map(techno => (
                   <span className="badge badge-primary">{techno}</span>

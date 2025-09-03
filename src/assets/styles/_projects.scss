@@ -10,6 +10,7 @@
    flex-direction: column;
    background-color: rgb(var(--bg-light));
    overflow: hidden;
+   border-radius:5px;
 }
 
 .project__body{
@@ -64,12 +65,6 @@
    padding-bottom: 2em;
 }
 
-.project__detail-body{
-   // display: grid;
-   // grid-template-columns: 2fr 1fr;
-   // column-gap:50px;
-   // padding-top: 2em;
-}
 
 .project-dialog{
    max-height: 100%!important;
@@ -90,3 +85,11 @@
 }
 
 //pc
+@media (min-width: 1140px){
+   .project__detail-body{
+      display: grid;
+      grid-template-columns: 4fr 3fr;
+      column-gap:50px;
+      padding-top: 2em;
+   }
+}
