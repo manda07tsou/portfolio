@@ -13,6 +13,7 @@
 
    .skill__item-title{
       font-size: .9em;
+      font-weight: 500;
    }
 
    .icon{
@@ -47,7 +48,7 @@
    }
    
    .skill__card{
-      background-color: rgb(var(--bg-light));
+      background-color: rgb(var(--bg));
       padding: 1em;
       display: grid;
       grid-template-columns: repeat(4,1fr);
@@ -58,18 +59,22 @@
 
 .skill__card{
    position: relative;
-   background-color: rgb(var(--bg-light));
    border: 1px solid rgb(var(--primary));
+   border-radius:8px;
+   background-color: rgb(var(--primary)/.2);
 
    .skill__card-title{
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translate(-50%, -40%);
-      background-color: rgb(var(--primary));
-      height: 80px;
-      width: 80px;
-      font-weight: bold;
+      transform: translate(-50%, -50%);
+      background-color: rgb(var(--primary)/.7);
+      border:3px solid rgb(var(--primary));
+      height: 95px;
+      width: 95px;
+      font-weight: 600;
+      font-size: .95em;
+      text-transform: uppercase;
       border-radius: 50%;
       display: flex;
       align-items: center;

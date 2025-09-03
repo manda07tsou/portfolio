@@ -14,7 +14,7 @@ export function Header(){
                <a href="#home" className="nav__item">Home</a>
                <a href="#skills" className="nav__item">Compétences</a>
                <a href="#projects" className="nav__item">Projets</a>
-               <a href="#contacts" className="nav__item">Me retrouver</a>
+               <a href="#contacts" className="nav__item">Me contacter</a>
             </nav>
             <Burger isOpen={isNavOpen} onOpen={() => {setIsNavOpen(!isNavOpen)}}/>
          </header>
