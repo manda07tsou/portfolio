@@ -28,14 +28,15 @@ export function ProjectItem({data, index}){
 
    return <>
       <div className={`project fade ${observerClass}`} ref={ref} style={{transitionDelay: `.${index - 1}s`}}>
-         <div className="project__image">
+         <div className="project__images">
             <img src={`/src/assets/images/projects/${data.coverImage}`} alt="image__project" />
          </div>
          <div className="project__body">
-            <h5 className="project__title">{data.title}</h5>
+            <p className="text-primary hide-mobil">Développeur fullstack</p>
+            <div className="project__title">{data.title}</div>
             <div className="project__technos">
                {data.technos.map(techno => (
-                  <span className="badge badge-primary">{techno}</span>
+                  <span className="badge badge-warning">{techno}</span>
                ))}
             </div>
             <div className="project__description">{data.description}</div>

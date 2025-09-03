@@ -15,6 +15,12 @@
    margin-top: 40px;
 }
 
+@media (max-width: 720px){
+   .hide-mobil{
+      display: none;
+   }
+}
+
 @media (min-width: 1140px){
    .section{
       padding: 100px var(--container-padding);
