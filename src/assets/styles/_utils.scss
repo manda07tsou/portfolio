@@ -9,7 +9,7 @@
 }
 
 .text-warning{
-   color: rgb(var(--primary));
+   color: rgb(var(--yellow));
 }
 
 .text-center{
@@ -20,6 +20,19 @@
    background-color: var(--bg-light);
 }
 
+.bg-orange{
+    background-color:rgb(var(--orange));
+    color: white;
+}
+
+.bg-purple{
+    background-color: rgb(var(--purple));
+    color: white;
+}
+
+.bg-info{
+    background-color: #3EAEFF;
+}
 @for $i from 0 through 5{
     .m-#{i}{
         margin: space(#{$i});

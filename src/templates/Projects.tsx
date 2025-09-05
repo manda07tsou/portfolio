@@ -11,6 +11,7 @@ export function Projects(){
    return (
       <div className="section" id="projects">
          <div className="section__header">
+            <p className="section__subtitle">Projets marquants</p>
             <div className={`section__title fade ${observerClass}`} ref={ref}>Mes réalisations</div>
          </div>
          <div className="section__body project__grid">

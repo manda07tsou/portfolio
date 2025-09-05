@@ -8,9 +8,12 @@
 
 .section__title{
    font-weight: 600;
-   font-size: 2.6em;
+   font-size: 2em;
 }
 
+.section__subtitle{
+   font-size: 1.2em;
+}
 .section__body{
    margin-top: 40px;
 }
@@ -24,5 +27,10 @@
 @media (min-width: 1140px){
    .section{
       padding: 100px var(--container-padding);
+   }
+
+   .section__title{
+      font-weight: 600;
+      font-size: 2.6em;
    }
 }

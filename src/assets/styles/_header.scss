@@ -59,10 +59,9 @@
 }
 
 .hero{
-   height: 100%;
    display: flex;
    align-items: center;
-   height: 70vh;
+   height: 85vh;
 }
 
 .hero__title{
@@ -71,8 +70,9 @@
 }
 
 .hero__subtitle{
-   font-size: 1.2em;
+   font-size: 1.6em;
    margin-top: 10px;
+   color:rgb(var(--yellow));
 }
 
 @media (max-width: 1140px){
