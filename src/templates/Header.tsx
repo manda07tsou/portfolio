@@ -9,7 +9,7 @@ export function Header(){
    return (
       <div className="header__container">
          <header className={`header ${headerClass}`}>
-            <div className="logo">RHj</div>
+            <div className="logo">Rhj</div>
             <nav className="header__nav">
                <a href="#home" className="nav__item">Home</a>
                <a href="#skills" className="nav__item">Compétences</a>

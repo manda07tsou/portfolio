@@ -1,14 +1,14 @@
 //mobil
 .project__grid{
-   // display: grid;
-   // grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
    gap: 2em;
 }
 
 .project{
    margin-bottom: 50px;
    transition: .3s;
-   background-color: rgb(var(--bg-light)/.2);
+   border-radius:8px;
+   overflow: hidden;
+   background-color: rgb(var(--bg-light)/.3);
 }
 
 .project__body{
@@ -88,10 +88,26 @@
       gap: 20px;
       align-items: center;
       padding: 1.5em;
+      background-color: transparent;
 
-      &:hover{
-         background-color: rgb(var(--bg-light)/.4);
-         padding: 1.5em;
+      &::after{
+         display: block;
+         content: "";
+         width: 60%;
+         height: 100%;
+         position: absolute;
+         background-color: rgb(var(--bg-light)/.2);
+         border: 1px solid rgb(var(--bg-light));
+         z-index: -1;
+         border-radius: 8px;
+      }
+   }
+
+   .project:nth-child(odd){
+      padding-left: 0px;
+
+      &::after{
+         right: 0;
       }
    }
 
