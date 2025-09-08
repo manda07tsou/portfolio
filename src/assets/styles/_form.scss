@@ -1,0 +1,26 @@
+input, textarea{
+   outline: none;
+   font-family: inherit;
+}
+
+.form-control{
+   background-color: rgb(var(--bg-light)/.6);
+   border: 1px solid rgb(var(--bg-light));
+   width: 100%;
+   padding: .5em .8em;
+   color: rgb(var(--color));
+   border-radius: 4px;
+
+   &::placeholder{
+      color: rgb(255 255 255 / .5);
+   }
+}
+
+.form-group{
+   label{
+      font-size: .85em;
+      text-transform: uppercase;
+   }
+
+   margin-bottom: 1em;
+}
