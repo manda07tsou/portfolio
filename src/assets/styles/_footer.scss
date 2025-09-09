@@ -2,3 +2,48 @@
    background-color: rgb(var(--bg-light)/.5);
    padding: var(--padding) var(--container-padding);
 }
+
+.contact__socio{
+   margin-bottom: 20px;
+   text-align: center;
+}
+.footer__contact{
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+
+   .footer__link{
+      width: 2.5em;
+      height: 2.5em;
+      background-color: rgb(var(--primary)/.5);
+      border: 1px solid rgb(var(--primary));
+      padding: .5em;
+      border-radius: 50%;
+      transition: .3s;
+   }
+
+   .footer__link:hover{
+      background-color: rgb(var(--primary));
+   }
+
+   .icon{
+      width: 1.4em;
+      height: 1.4em;
+   }
+}
+
+@media (min-width: 900px){
+   .footer{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .footer__contact{
+      justify-content: start;
+   }
+
+   .contact__socio{
+      text-align: start;
+   }
+}
