@@ -1,5 +1,5 @@
 .contact__box{
-   background-color: rgb(var(--bg-light)/.2);
+   background-color: rgb(var(--bg-light)/.4);
    border: 1px solid rgb(var(--bg-light));
    margin-top: 20px;
    border-radius: 8px;
@@ -11,9 +11,10 @@
 
 .contact__item{
    padding: 1em;
-   background-color: rgb(var(--bg-light)/.3);
-   border-radius:4px;
+   background-color: rgb(var(--bg-light)/.8);
+   border-radius:4px 4px 0 0;
    margin-bottom: 1em;
+   border-bottom: 4px solid rgb(var(--bg-light));
 
    .icon{
       width: 1.4em;
@@ -28,7 +29,7 @@
 }
 
 .contact__box-body{
-   background-color: rgb(var(--bg-light)/.3);
+   background-color: rgb(var(--bg-light)/.6);
    padding: 2em 1em;
    margin: 0;
    border-radius: 10px 10px 0 0;   
