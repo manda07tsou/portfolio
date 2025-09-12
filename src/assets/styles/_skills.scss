@@ -25,13 +25,11 @@
 
 .skill__card{
    position: relative;
-   // border: 1px solid rgb(var(--bg-light)/.9);
    border-radius:8px;
    background: linear-gradient(to bottom, rgb(var(--primary)/.5), rgb(var(--bg)));
 
-   // background-color: rgb(var(--bg-light)/.3);   
    &::after{
-      background-color:rgb(var(--bg));
+      background: linear-gradient(to bottom, rgb(var(--bg-light)) , rgb(var(--bg)));
       display: block;
       content: "";
       width: 98%;

@@ -3,17 +3,26 @@
       "id":1,
       "title": "Gmao mei",
       "technos": ["Symfony","React","Meilisearch","Mysql"],
-      "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
-      "roles":"En tant que développeur fullstack Symfony et React, j’ai conçu et mis en place une API robuste avec API Platform, garantissant des échanges de données sécurisés et performants. Côté frontend, j’ai développé une interface utilisateur moderne et responsive avec React, afin d’assurer une expérience fluide et adaptée à tous les supports. Mon travail a permis de relier efficacement la logique métier du backend avec une interface intuitive pour les utilisateurs.",
       "coverImage":"gmao.png",
       "images":["gmao1.png","gmao2.png","gmao3.png"],
+      "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
       "links": {
          "code": "https://github.com/manda07tsou/portfolio",
          "show": "https://github.com/manda07tsou/kimei_frontend"
-      }
+      },
+      "content":"gmao.md"
    },
    {
       "id":2,
+      "title": "Artiamour",
+      "technos": ["Symfony","React","Meilisearch","Mysql"],
+      "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
+      "coverImage":"artiamour2.png",
+      "images":["artiamour.png","artiamour1.png","artiamour2.png"],
+      "content":"gmao.md"
+   },
+   {
+      "id":3,
       "title": "Université",
       "technos": ["Symfony","React","Meilisearch","Mysql"],
       "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
@@ -23,14 +32,7 @@
       "links": {
          "code": "https://github.com/manda07tsou/kimei_frontend",
          "show": "https://github.com/manda07tsou/kimei_frontend"
-      }
-   },
-   {
-      "id":3,
-      "title": "Artiamour",
-      "technos": ["Symfony","React","Meilisearch","Mysql"],
-      "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
-      "coverImage":"gmao.png",
-      "images":["gmao1.png","gmao2.png","gmao3.png"]
+      },
+      "content":"gmao.md"
    }
 ]
