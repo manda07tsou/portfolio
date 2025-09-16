@@ -28,7 +28,7 @@ export function ProjectItem({data, index}){
    const observerClass = inView ? 'in':''
 
    return <>
-      <div className={`project fade ${observerClass}`} ref={ref} style={{transitionDelay: `.${index - 1}s`}}>
+      <div key={`project-${data.id}`} className={`project fade ${observerClass}`} ref={ref} style={{transitionDelay: `.${index - 1}s`}}>
          <div className="project__images">
             <img src={`/src/assets/images/projects/${data.coverImage}`} alt="image__project" />
          </div>
@@ -37,7 +37,7 @@ export function ProjectItem({data, index}){
             <div className="project__title">{data.title}</div>
             <div className="project__technos">
                {data.technos.map(techno => (
-                  <span className="badge badge-warning">{techno}</span>
+                  <span key={`${techno}-${data.id}}`} className="badge badge-warning">{techno}</span>
                ))}
             </div>
             <div className="project__description">{data.description}</div>

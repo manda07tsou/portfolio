@@ -4,7 +4,7 @@
 
 //components
 @use "./assets/styles/typography";
-@use "./assets/styles/utils";
+// @use "./assets/styles/utils";
 @use "./assets/styles/template";
 @use "./assets/styles/layout";
 @use "./assets/styles/buttons";
@@ -50,4 +50,5 @@ body{
   line-height: 1.6;
   width: 100%;
   min-height: 100vh;
+  position: relative;
 }
