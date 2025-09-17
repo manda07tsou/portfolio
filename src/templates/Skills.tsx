@@ -1,7 +1,7 @@
 import { useInView } from "react-intersection-observer";
 import { Icon } from "../components/icons/icon";
 import { observerOptions } from "../config";
-import skills from "../skillsData.json";
+import skills from "./../modules/skills/skillsData.json";
 
 export function Skills(){
    const  { ref , inView }  =  useInView (observerOptions);

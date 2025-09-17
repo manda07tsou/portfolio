@@ -19,7 +19,7 @@
       "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
       "coverImage":"artiamour2.png",
       "images":["artiamour.png","artiamour1.png","artiamour2.png"],
-      "content":"gmao.md"
+      "content":"artiamour.md"
    },
    {
       "id":3,
@@ -33,6 +33,6 @@
          "code": "https://github.com/manda07tsou/kimei_frontend",
          "show": "https://github.com/manda07tsou/kimei_frontend"
       },
-      "content":"gmao.md"
+      "content":"universite.md"
    }
 ]

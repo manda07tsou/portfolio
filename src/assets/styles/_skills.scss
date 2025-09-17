@@ -56,8 +56,10 @@
       padding-bottom: .7em;
       width: 150px;
       border-radius: 4px;
-      background-color: rgb(var(--primary));
-      color: var(--primary-inversed);
+      // background-color: rgb(var(--primary));
+      background-color: rgb(var(--bg));
+      border: 3px solid rgb(var(--primary));
+      // color: var(--primary-inversed);
 
    }
 
@@ -87,32 +89,6 @@
       height: 2em;
    }
 }
-
-// .card-orange{
-//    background: linear-gradient(to bottom, rgb(var(--orange)/.5), rgb(var(--bg)));
-
-//    .skill__card-title{
-//       background-color: rgb(var(--orange)/.8);
-//    }
-
-// }
-
-// .card-purple{
-//    background: linear-gradient(to bottom, rgb(var(--purple)/.5), rgb(var(--bg)));
-  
-//    .skill__card-title{
-//       background-color: rgb(var(--purple)/.8);
-//    }
-
-// }
-
-// .card-info{
-//    background: linear-gradient(to bottom, rgb(var(--yellow)/.5), rgb(var(--bg)));
-
-//    .skill__card-title{
-//       background-color: rgb(var(--yellow)/.8);
-//    }
-// }
 
 @keyframes boxShadow {
    0%{

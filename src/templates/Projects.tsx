@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer"
 import { observerOptions } from "../config"
-import projectsData from "../projectsData.json";
+import projectsData from "./../modules/Projects/projectsData.json";
 import { ShowProjectAction } from "../modules/Projects/ShowProjectAction";
 
 export function Projects(){
@@ -30,7 +30,7 @@ export function ProjectItem({data, index}){
    return <>
       <div key={`project-${data.id}`} className={`project fade ${observerClass}`} ref={ref} style={{transitionDelay: `.${index - 1}s`}}>
          <div className="project__images">
-            <img src={`/src/assets/images/projects/${data.coverImage}`} alt="image__project" />
+            <img src={`/images/projects/${data.coverImage}`} alt="image__project" />
          </div>
          <div className="project__body">
             <p className="text-primary hide-mobil">Développeur fullstack</p>

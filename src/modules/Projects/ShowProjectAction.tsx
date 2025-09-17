@@ -14,10 +14,11 @@ export function ShowProjectAction({project}){
    const [content, setContent] = useState('')
 
    useEffect(() => {
-      fetch("/src/gmao.md") // chemin relatif depuis /public
+      fetch(`/projects/descriptions/${project.content}`) // chemin relatif depuis /public
          .then((res) => res.text())
-         .then(res => setContent(res));
-   }, []);
+         .then(res => setContent(res))
+         .catch(error => console.error('une erreur s\'est produit lors de la récupération du description projet', error))
+   }, [])
 
    return (
       <>
@@ -51,8 +52,8 @@ export function ShowProjectAction({project}){
                   </div>
                   <div className="project__images-grid">
                      {project.images.map(img => (
-                        <a href={`/src/assets/images/projects/${img}`} target="_blank">
-                           <img src={`/src/assets/images/projects/${img}`} alt="project__image"/>
+                        <a href={`/images/projects/${img}`} target="_blank">
+                           <img src={`/images/projects/${img}`} alt="project__image"/>
                         </a>
                      ))}
                   </div>
