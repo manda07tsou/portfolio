@@ -1,21 +1,27 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Icon } from "../components/icons/icon";
 import emailjs from "@emailjs/browser";
+import { Spinner } from "../components/spinner/spinner";
+import toast from "react-hot-toast";
 
 export function Contacts(){
    const formRef = useRef(null)
+   const [isSubmitted, setIsSubmitted] = useState(false)
 
    const handleSubmit = async (e) => {
       e.preventDefault()
+      setIsSubmitted(true)
 
       emailjs.sendForm('service_li0tc08','template_f52av0p', formRef.current, {
          publicKey: 'MgVnw0CHmwQnVf4wd'
       }).then(
          () => {
-            console.log('SUCCESS!');
+            toast.success('Votre message a été envoyé avec succès.')
+            setIsSubmitted(false)
          },
          (error) => {
-            console.log('FAILED...', error.text);
+            setIsSubmitted(false)
+            toast.error('Une erreur est survenue lors de l’envoi de votre message. Veuillez réessayer plus tard.')
          },
       )
    };
@@ -54,7 +60,7 @@ export function Contacts(){
                            </div>
                            <div className="form-group">
                               <label htmlFor="">E-mail</label>
-                              <input name="email" className="form-control" required id="name" placeholder="Votre e-mail"></input>
+                              <input name="email" type="email" className="form-control" required id="name" placeholder="Votre e-mail"></input>
                            </div>
 
                         </div>
@@ -64,7 +70,13 @@ export function Contacts(){
                         </div>
 
                      </div>
-                     <button type="submit" className="btn btn-primary">Envoyer</button>
+                     <button disabled={isSubmitted} type="submit" className="btn btn-primary">
+                        {isSubmitted ?
+                           <Spinner/>
+                           :
+                           <>Envoyer</>
+                        }
+                     </button>
                   </form>
                </div>
             </div>

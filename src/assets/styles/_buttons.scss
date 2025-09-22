@@ -12,12 +12,21 @@
    &:hover{
       filter: contrast(.8);
    }
+
+   &:disabled{
+      cursor: default;
+   }
 }
 
 .btn-primary{
    background-color: rgb(var(--primary));
    color: var(--primary-inversed);
    border-color: rgb(var(--primary));
+
+   &:disabled{
+      background-color: rgb(var(--primary)/.2);
+      border-color: rgb(var(--primary)/.2);
+   }
 }
 
 .btn-outlined-primary{
