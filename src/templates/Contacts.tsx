@@ -1,6 +1,25 @@
+import { useRef } from "react";
 import { Icon } from "../components/icons/icon";
+import emailjs from "@emailjs/browser";
 
 export function Contacts(){
+   const formRef = useRef(null)
+
+   const handleSubmit = async (e) => {
+      e.preventDefault()
+
+      emailjs.sendForm('service_li0tc08','template_f52av0p', formRef.current, {
+         publicKey: 'MgVnw0CHmwQnVf4wd'
+      }).then(
+         () => {
+            console.log('SUCCESS!');
+         },
+         (error) => {
+            console.log('FAILED...', error.text);
+         },
+      )
+   };
+
    return <>
       <div className="section" id="contacts">
          <div className="section__header">
@@ -26,26 +45,26 @@ export function Contacts(){
             <div className="contact__box-body">
                <div className="contact__form">
                   <h6 className="mb-3">M'envoyer un message</h6>
-                  <form action="">
+                  <form onSubmit={handleSubmit} ref={formRef}>
                      <div className="form__grid">
                         <div>
                            <div className="form-group">
                               <label htmlFor="">Nom</label>
-                              <input className="form-control" id="name" placeholder="Votre nom"></input>
+                              <input name="nom" className="form-control" id="name" required placeholder="Votre nom"></input>
                            </div>
                            <div className="form-group">
                               <label htmlFor="">E-mail</label>
-                              <input className="form-control" id="name" placeholder="Votre e-mail"></input>
+                              <input name="email" className="form-control" required id="name" placeholder="Votre e-mail"></input>
                            </div>
 
                         </div>
                         <div className="form-group">
                            <label htmlFor="">Messages</label>
-                           <textarea className="form-control" placeholder="Votre message"></textarea>
+                           <textarea name="message" className="form-control" required placeholder="Votre message"></textarea>
                         </div>
 
                      </div>
-                     <button className="btn btn-primary">Envoyer</button>
+                     <button type="submit" className="btn btn-primary">Envoyer</button>
                   </form>
                </div>
             </div>
