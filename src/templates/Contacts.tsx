@@ -46,7 +46,10 @@ export function Contacts(){
                      <Icon name={"icon-phone"}/>
                      Télephone
                   </p>
-                  <div className="contact__info">+261 38 71 697 95</div>
+                  <div className="contact__info">
+                     <div>+261 38 71 697 95</div>
+                     <div>+261 32 74 285 37</div>
+                  </div>
                </div>
             </div>
             <div className="contact__box-body">

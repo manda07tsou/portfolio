@@ -4,6 +4,10 @@
    padding: var(--padding);
 }
 
+.section{
+   padding: calc(var(--padding)*4) var(--padding);
+}
+
 .section__header{
    margin-bottom: space(--padding);
 }
