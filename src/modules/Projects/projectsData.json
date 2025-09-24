@@ -3,13 +3,9 @@
       "id":1,
       "title": "Gmao mei",
       "technos": ["Symfony","React","Meilisearch","Mysql"],
-      "coverImage":"gmao.png",
-      "images":["gmao1.png","gmao2.png","gmao3.png"],
+      "coverImage":"gmao1.png",
+      "images":["gmao1.png","gmao2.png","gmao3.png","gmao4.png","gmao5.png"],
       "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
-      "links": {
-         "code": "https://github.com/manda07tsou/portfolio",
-         "show": "https://github.com/manda07tsou/kimei_frontend"
-      },
       "content":"gmao.md"
    },
    {
@@ -27,7 +23,7 @@
       "technos": ["Symfony","React","Meilisearch","Mysql"],
       "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
       "roles":"En tant que développeur fullstack Symfony et React, j’ai conçu et mis en place une API robuste avec API Platform, garantissant des échanges de données sécurisés et performants. Côté frontend, j’ai développé une interface utilisateur moderne et responsive avec React, afin d’assurer une expérience fluide et adaptée à tous les supports. Mon travail a permis de relier efficacement la logique métier du backend avec une interface intuitive pour les utilisateurs.",
-      "coverImage":"gmao.png",
+      "coverImage":"gmao2.png",
       "images":["gmao1.png","gmao2.png"],
       "links": {
          "code": "https://github.com/manda07tsou/kimei_frontend",

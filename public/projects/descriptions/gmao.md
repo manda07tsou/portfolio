@@ -8,6 +8,7 @@ En tant que développeur full-stack, j'ai été responsable de l'ensemble du cyc
 - **Base de données** : MySQL  
 - **Moteur de recherche** : MeiliSearch  
 - **Déploiement** : Serveur VPS (installation et configuration de Apache, PHP-FPM et MeiliSearch)
+- **Outils** : Git, Github, Trello
 
 
 ### Rôle et responsabilités 
