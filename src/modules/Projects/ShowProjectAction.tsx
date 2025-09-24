@@ -1,14 +1,18 @@
 import { useInView } from "react-intersection-observer"
-import {Dialog} from "./../../components/Dialog/Dialog"
-import {useDialog} from "./../../components/Dialog/hooks/hooks"
+import {Dialog} from "../../components/Dialog/Dialog"
+import {useDialog} from "../../components/Dialog/hooks/hooks"
 import { observerOptions } from "../../config"
 import { useEffect, useState } from "react"
 import Markdown from "react-markdown"
 import rehypeRaw from 'rehype-raw';
+import type {Project} from "./types";
 
 
-export function ShowProjectAction({project}){
-   const {isOpen, handleOpen, handleClose} = useDialog(false)
+interface ShowProjectActionProps{
+   project: Partial<Project>
+}
+export function ShowProjectAction({project}:ShowProjectActionProps){
+   const {isOpen, handleOpen, handleClose} = useDialog()
    const {ref:titleRef, inView: titleInView} = useInView(observerOptions)
    const observerClass = titleInView ? 'in':''
    const [content, setContent] = useState('')
@@ -34,7 +38,7 @@ export function ShowProjectAction({project}){
                   <div>
                      <h1 className={`fade ${observerClass}`} ref={titleRef}>{project.title}</h1>
                      <div className="project__technos">
-                        {project.technos.map(techno => (
+                        {project?.technos?.map(techno => (
                            <span className="badge badge-warning">{techno}</span>
                         ))}
                      </div>
@@ -51,7 +55,7 @@ export function ShowProjectAction({project}){
                      <Markdown rehypePlugins={[rehypeRaw]}>{content}</Markdown>
                   </div>
                   <div className="project__images-grid">
-                     {project.images.map(img => (
+                     {project?.images?.map(img => (
                         <a href={`/images/projects/${img}`} target="_blank">
                            <img src={`/images/projects/${img}`} alt="project__image"/>
                         </a>

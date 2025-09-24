@@ -2,23 +2,34 @@ import "./_dialog.scss"
 import { useEffect, useRef } from "react"
 import { createPortal } from "react-dom"
 
+interface DialogProps{
+   isOpen: boolean,
+   onClose: () => void,
+   closedBtn?: boolean,
+   className?: string,
+   children: React.ReactNode
+}
 export function Dialog({
    isOpen, 
    onClose,
    closedBtn=false,
    className='',
    children
-}){
-   const dialogShadow = useRef(null)
-   const dialog = useRef(null)
+}: DialogProps){
+   const dialogShadow = useRef<HTMLDivElement|null>(null)
+   const dialog = useRef<HTMLDivElement|null>(null)
 
    useEffect(() => {
       if(isOpen){
-         dialogShadow.current.addEventListener('click', (e) => {
-            if(dialog.current && !dialog.current.contains(e.target)){
-               onClose()
-            }
-         })
+         if(dialogShadow.current){
+            dialogShadow.current.addEventListener('click', (e:MouseEvent) => {
+               if(dialog.current){
+                  if (!dialog.current.contains(e.target as Node)) {
+                     onClose();
+                  }
+               }
+            })
+         }
          //Désactive le scroll sur le body
          document.body.style.overflow = 'hidden';
 
@@ -52,20 +63,22 @@ export function Dialog({
    )
 }
 
-export function DialogHeader({children}){
-
+interface ChildrenProps{
+   children: React.ReactNode
+}
+export function DialogHeader({children}:ChildrenProps){
    return <div className="dialog__header">
             {children}
          </div>
 }
 
-export function DialogBody({children}){
+export function DialogBody({children}:ChildrenProps){
    return <div className="dialog__body">
          {children}
       </div>
 }
 
-export function DialogFooter({children}){
+export function DialogFooter({children}:ChildrenProps){
    return <div className="dialog__footer">
             {children}
          </div>

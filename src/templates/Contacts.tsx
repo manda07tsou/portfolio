@@ -5,14 +5,14 @@ import { Spinner } from "../components/spinner/spinner";
 import toast from "react-hot-toast";
 
 export function Contacts(){
-   const formRef = useRef(null)
+   const formRef = useRef<HTMLFormElement>(null)
    const [isSubmitted, setIsSubmitted] = useState(false)
 
-   const handleSubmit = async (e) => {
+   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault()
       setIsSubmitted(true)
 
-      emailjs.sendForm('service_li0tc08','template_f52av0p', formRef.current, {
+      emailjs.sendForm('service_li0tc08','template_f52av0p', formRef.current!, {
          publicKey: 'MgVnw0CHmwQnVf4wd'
       }).then(
          () => {
@@ -21,6 +21,7 @@ export function Contacts(){
          },
          (error) => {
             setIsSubmitted(false)
+            console.log(error)
             toast.error('Une erreur est survenue lors de l’envoi de votre message. Veuillez réessayer plus tard.')
          },
       )

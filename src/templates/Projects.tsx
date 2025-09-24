@@ -2,11 +2,11 @@ import { useInView } from "react-intersection-observer"
 import { observerOptions } from "../config"
 import projectsData from "./../modules/Projects/projectsData.json";
 import { ShowProjectAction } from "../modules/Projects/ShowProjectAction";
+import type { Project } from "../modules/Projects/types";
 
 export function Projects(){
    const {ref, inView} = useInView(observerOptions)
    const observerClass = inView ? 'in':''
-
 
    return (
       <div className="section" id="projects">
@@ -15,7 +15,7 @@ export function Projects(){
             <div className={`section__title fade ${observerClass}`} ref={ref}>Mes réalisations</div>
          </div>
          <div className="section__body project__grid">
-            {projectsData.map((project, index) => (
+            {projectsData.map((project, index:number) => (
                <ProjectItem data={project} index={index}/>
             ))}
          </div>
@@ -23,7 +23,11 @@ export function Projects(){
    )
 }
 
-export function ProjectItem({data, index}){
+interface projectItemProps{
+   data: Partial<Project>,
+   index: number
+}
+export function ProjectItem({data, index}:projectItemProps){
    const {ref, inView} = useInView(observerOptions)
    const observerClass = inView ? 'in':''
 
@@ -36,7 +40,7 @@ export function ProjectItem({data, index}){
             <p className="text-primary hide-mobil">Développeur fullstack</p>
             <div className="project__title">{data.title}</div>
             <div className="project__technos">
-               {data.technos.map(techno => (
+               {data?.technos?.map((techno:string) => (
                   <span key={`${techno}-${data.id}}`} className="badge badge-warning">{techno}</span>
                ))}
             </div>

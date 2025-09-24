@@ -2,7 +2,7 @@ import { Toaster } from "react-hot-toast";
 import './_toast.scss';
 
 export function ToastContainer(){
-   return <Toaster
+   return (<Toaster
       position="top-right"
       toastOptions={{
          className: 'toast',
@@ -23,5 +23,5 @@ export function ToastContainer(){
          },
 
       }}
-   />
+   />)
 }

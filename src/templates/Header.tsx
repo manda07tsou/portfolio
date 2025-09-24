@@ -3,10 +3,10 @@ import { Burger } from "../components/burger/burger";
 import { Hero } from "./Hero";
 
 export function Header(){
-   const [isNavOpen, setIsNavOpen] = useState(false)
-   const [menuActive, setMenuActive] = useState(window.location.hash.substring(1))
+   const [isNavOpen, setIsNavOpen] = useState<boolean>(false)
+   const [menuActive, setMenuActive] = useState<string>(window.location.hash.substring(1))
 
-   const handleClickMenu = (menuKey) => {
+   const handleClickMenu = (menuKey:string) => {
       setMenuActive(menuKey)
       setIsNavOpen(false)
    }
@@ -42,7 +42,14 @@ export function Header(){
    )
 }
 
-function MenuItem({itemKey, menuActive, onClick, children}){
+
+interface MenuItemProps {
+   itemKey: string,
+   menuActive: string,
+   onClick: (itemKey: string) => void,
+   children: React.ReactNode
+}
+function MenuItem({itemKey, menuActive, onClick, children}: MenuItemProps){
    const activeClass = itemKey.toLowerCase() == menuActive.toLowerCase() ? "active":""
 
    return <div onClick={() => onClick(itemKey)}>

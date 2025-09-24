@@ -3,6 +3,11 @@ import { Icon } from "../components/icons/icon";
 import { observerOptions } from "../config";
 import skills from "./../modules/skills/skillsData.json";
 
+interface Skill{
+   id:number,
+   title:string,
+   icon:string
+}
 export function Skills(){
    const  { ref , inView }  =  useInView (observerOptions);
    const observerClass = inView ? "in":""
@@ -18,13 +23,13 @@ export function Skills(){
    </section>
 }
 
-interface SkillItem{
+
+interface SkillItemProps{
    title:string,
-   skills: [],
+   skills: Skill[],
    delay: string
 }
-
-export function SkillCardItem({title, skills, delay}:SkillItem){
+export function SkillCardItem({title, skills, delay}:SkillItemProps){
    const  { ref , inView }  =  useInView (observerOptions);
    const observerClass = inView ? "in":""
    const titleStyles = {
@@ -33,8 +38,7 @@ export function SkillCardItem({title, skills, delay}:SkillItem){
       outils: "card-info"
    }
 
-   
-   const currentTitleStyle = titleStyles[title.toLowerCase()];
+   const currentTitleStyle = titleStyles[title.toLowerCase() as keyof typeof titleStyles];
 
    return (
       <div ref={ref} className={`skill__card fade ${observerClass} ${currentTitleStyle}`} style={{transitionDelay: delay}}>
@@ -54,7 +58,6 @@ export function SkillCardItem({title, skills, delay}:SkillItem){
 }
 
 export function SkillCard(){
-
    return (
       <div className="skill__grid">
          {skills?.frontend && <SkillCardItem title="Frontend" skills={skills?.frontend} delay="0s"/>}
