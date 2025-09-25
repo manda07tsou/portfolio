@@ -160,6 +160,26 @@
    }
 }
 
+.btn-show{
+   $color: rgb(var(--yellow));
+   border:2px solid $color;
+   color: $color;
+   width: 3em;
+   height: 3em;
+   border-radius:50%;
+   transition: .3s;
+
+   .icon{
+      width: 2em;
+      height: 2em;
+   }
+
+   &:hover{
+      background-color: $color;
+      color: rgb(56, 54, 54);
+   }
+}
+
 //pc
 @media (min-width: 1140px){
    .project__detail-body{

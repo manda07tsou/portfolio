@@ -80,7 +80,8 @@
 .hero__subtitle{
    font-size: 1.6em;
    margin-top: 10px;
-   color:rgb(var(--yellow));
+   margin-bottom: .3em;
+   // color:rgb(var(--yellow));
 }
 
 .hero__body{
@@ -158,10 +159,6 @@
          font-weight: bold;
          margin-right: 0;
       }
-   }
-   .hero{
-      text-align: center;
-
    }
 
    .hero__body{

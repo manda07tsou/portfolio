@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 import Markdown from "react-markdown"
 import rehypeRaw from 'rehype-raw';
 import type {Project} from "./types";
-
+import { Icon } from "../../components/icons/icon"
 
 interface ShowProjectActionProps{
    project: Partial<Project>
@@ -26,7 +26,9 @@ export function ShowProjectAction({project}:ShowProjectActionProps){
 
    return (
       <>
-         <button className="btn btn-outlined-primary mt-3" onClick={handleOpen}>Details</button>
+         <button className="btn-show mt-3" onClick={handleOpen}>
+            <Icon name="icon-arrowRight"></Icon>
+         </button>
          <Dialog 
             isOpen={isOpen} 
             onClose={handleClose}
