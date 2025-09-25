@@ -1,7 +1,7 @@
 @use "./utils";
 
 .header__container{
-   background: linear-gradient(rgb(var(--bg) / .6) 10%, rgb(var(--bg)));
+   background: linear-gradient(rgb(var(--bg) / .8) 10%, rgb(var(--bg)));
    position: relative;
    overflow: hidden;
 
@@ -77,11 +77,15 @@
    font-weight: 600;
 }
 
-
 .hero__subtitle{
    font-size: 1.6em;
    margin-top: 10px;
    color:rgb(var(--yellow));
+}
+
+.hero__body{
+   border-left: 5px solid rgb(var(--primary)/.3);
+   padding-left: 2em;
 }
 
 .mobil__sidebar{
