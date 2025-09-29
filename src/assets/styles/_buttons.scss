@@ -1,9 +1,9 @@
 .btn{
-   display: block;
+   display: inline-block;
    font-size: .75em;
    font-weight: 600;
    padding: 1em 1em;
-   border-radius: 4px;
+   // border-radius: 4px;
    text-transform: uppercase;
    cursor: pointer;
    border: 1px solid transparent;
@@ -28,6 +28,7 @@
       border-color: rgb(var(--primary)/.2);
    }
 }
+
 
 .btn-outlined-primary{
    border-color: rgb(var(--primary));

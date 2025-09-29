@@ -1,7 +1,7 @@
 //mobil
 .project__grid{
    display: grid;
-   gap: 2em;
+   gap: 3em;
 }
 
 .project{
@@ -13,7 +13,7 @@
 .project__body{
    transition: .5s;
    bottom: 0;
-   padding: 1em;
+   padding: 1.5em 1.2em;
 }
 
 .project__title{
@@ -118,9 +118,9 @@
          height: 100%;
          position: absolute;
          background: linear-gradient(to right, rgb(var(--bg-light)),  rgb(var(--bg-light)), rgb(var(--primary)/.18));
-         border: 1px solid rgb(var(--bg-light));
          z-index: -1;
       }
+
    }
 
    .project:hover{
@@ -145,6 +145,7 @@
       &::after{
          border-right: 5px solid rgb(var(--primary)/.3);
       }
+
       .project__images{
          grid-column-start: 2;
          grid-row-start: 1;
