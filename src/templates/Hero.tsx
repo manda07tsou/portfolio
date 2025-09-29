@@ -13,9 +13,6 @@ export function Hero(){
             <div className={`fade ${observerClass}`} ref={ref}  style={{transitionDelay: ".1s"}}> Mandaniaina<span className="text-primary"> Vonintsoa</span></div>
          </div>
          <div className={`hero__subtitle fade ${observerClass}`} style={{transitionDelay: ".2s"}}>Développeur Symfony / React</div>
-         <div className="mb-4 mt-5">
-            <a href="#contacts" className="btn btn-outlined-primary">Me contacter</a>
-         </div>
       </div>
    </section>
 }
