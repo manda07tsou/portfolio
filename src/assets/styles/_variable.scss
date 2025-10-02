@@ -1,21 +1,21 @@
 :root{
    --bg: 15 24 36;
-   --bg-light: 21 37 55;
+   --bg-light:24 45 67;
    --border: 130 134 176;
-   --color:#fff;
-   // --primary:64 255 0;
-   --primary:255 230 0;
-   --primary-inversed: #302f2f;
-   --info:51 204 255;
+   --color:255 255 255;
+   --color-100: #ebebeb;
+   --primary:0 172 230;
+   --primary:51 153 255;
+   --primary-inversed: #fff;
    --orange: 255 122 0;
    --purple: 173 0 255;
-   --blue: 62 174 255;
    --yellow: 255 230 0;
    --warning: 255 230 0;
    --shadow-box: 0 0 .875rem 0 rgba(52, 58, 64, .03);
    --padding: 1rem;
    --container-padding: 1rem;
    --space: 5px;
+   --card-bg:30 56 81;
 }
 
 @media (min-width: 1140px){

@@ -46,7 +46,7 @@ body{
   font-weight: 400;
   font-size: 15px;
   background-color: rgb(var(--bg));
-  color: var(--color);
+  color: rgb(var(--color)/.9);
   line-height: 1.6;
   width: 100%;
   min-height: 100vh;

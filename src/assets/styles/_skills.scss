@@ -26,10 +26,10 @@
 
 .skill__card{
    position: relative;
-   background: linear-gradient(to bottom, rgb(var(--primary)/.8), rgb(var(--yellow)/.7), rgb(var(--bg)));
+   background: linear-gradient(to bottom, rgb(var(--primary)/.8), rgb(var(--primary)/.5), rgb(var(--bg)));
 
    &::after{
-      background: linear-gradient(to bottom, rgb(var(--bg-light)) , rgb(var(--bg)));
+      background: linear-gradient(to bottom, rgb(var(--bg-light)), rgb(var(--bg-light)), rgb(var(--bg)));
       display: block;
       content: "";
       width: calc(100% - 2px);
@@ -55,7 +55,8 @@
       padding-bottom: .7em;
       width: 150px;
       background-color: rgb(var(--bg));
-      border: 2px solid rgb(var(--primary));
+      color: rgb(var(--primary));
+      border: 2px solid rgb(var(--primary)/.6);
    }
 
    .skill__card-body{
