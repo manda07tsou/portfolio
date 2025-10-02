@@ -6,11 +6,11 @@
 }
 
 .badge-primary{
-   background-color: rgb(var(--primary) / .15);
-   color: rgb(var(--primary));
+   background-color: rgb(var(--bg-light) / .15);
+   color: rgb(var(--bg-light));
 }
 
 .badge-warning{
-   background-color: rgb(var(--warning) / .15);
-   color: rgb(var(--warning));
+   background-color: rgb(var(--info) / .15);
+   color: rgb(var(--info));
 }
