@@ -70,10 +70,11 @@
    display: flex;
    align-items: center;
    height: 85vh;
+   justify-content: space-between;
 }
 
 .hero__title{
-   font-size: 3.3em;
+   font-size: 3em;
    font-weight: 600;
    line-height: 1.8em!important;
 }
@@ -84,10 +85,10 @@
    margin-bottom: .3em;
 }
 
-.hero__body{
-   border-left: 5px solid rgb(var(--primary)/.5);
-   padding-left: 1em;
-}
+// .hero__body{
+//    border-left: 5px solid rgb(var(--primary)/.5);
+//    padding-left: 1em;
+// }
 
 .mobil__sidebar{
    .logo{
