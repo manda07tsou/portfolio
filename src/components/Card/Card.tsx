@@ -1,6 +1,12 @@
+import type { ReactNode } from "react";
 import "./_card.scss";
 
-export function Card({children}){
+
+interface CardProps {
+  children: ReactNode;
+}
+
+export function Card({children}:CardProps){
    return <div className="card">
       <div className="card__header">
          <div className="circle circle__yellow"></div>

@@ -2,16 +2,20 @@ import { useInView } from "react-intersection-observer"
 import { observerOptions } from "../config"
 import { Card } from "../components/Card/Card"
 import { useEffect, useRef } from "react"
+import hljs from 'highlight.js';
+import 'highlight.js/styles/atom-one-dark.css';
 
 export function Hero(){
    const {ref, inView}= useInView(observerOptions)
-   const codeRef = useRef(null)
+   const codeRef = useRef<HTMLElement>(null);
    const observerClass = inView ? "in":""
 
   useEffect(() => {
     // Accédez à l'objet global hljs depuis la CDN
     if (hljs) {
-      hljs.highlightElement(codeRef.current);
+      if (codeRef.current) {
+         hljs.highlightElement(codeRef.current);
+      }
     }
   }, []);
    return <section className="section hero" id="hero">
