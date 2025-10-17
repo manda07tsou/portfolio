@@ -30,14 +30,17 @@ export function Hero(){
             <a href="#contacts" className="btn btn-primary mt-3">Me contacter</a>
          {/* </Card> */}
       </div>
-      <Card>
-         <pre>
-            <code ref={codeRef}>
+      <div className="code__highlight">
+         <Card>
+            <pre>
+               <code ref={codeRef}>
             {`function hello() {
    console.log("Welcome to my portfolio!");
 }`}
-            </code>
-         </pre>
-      </Card>
+               </code>
+            </pre>
+         </Card>
+
+      </div>
    </section>
 }
