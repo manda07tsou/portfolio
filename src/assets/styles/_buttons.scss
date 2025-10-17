@@ -1,8 +1,8 @@
 .btn{
    display: inline-block;
-   font-size: .75em;
+   font-size: .8em;
    font-weight: 600;
-   padding: 1em 1em;
+   padding: .9em 1em;
    border-radius: 4px;
    text-transform: uppercase;
    cursor: pointer;
@@ -20,7 +20,7 @@
 
 .btn-primary{
    background-color: rgb(var(--primary));
-   color: var(--primary-inversed);
+   color: rgb(var(--primary-inversed));
    border-color: rgb(var(--primary));
 
    &:disabled{

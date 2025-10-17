@@ -41,7 +41,7 @@ export function ProjectItem({data, index}:projectItemProps){
             <div className="project__title">{data.title}</div>
             <div className="project__technos">
                {data?.technos?.map((techno:string) => (
-                  <span key={`${techno}-${data.id}}`} className="badge badge-warning">{techno}</span>
+                  <span key={`${techno}-${data.id}}`} className="badge badge-primary">{techno}</span>
                ))}
             </div>
             <div className="project__description">{data.description}</div>
