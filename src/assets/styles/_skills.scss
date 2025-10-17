@@ -1,7 +1,7 @@
 .skill__grid{
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-   column-gap: 40px;
+   column-gap: 4em;
    row-gap: 60px;
 }
 
@@ -9,8 +9,7 @@
 .skill__item{
    display: flex;
    flex-direction: column;
-   align-items: center;
-   gap: .5em;
+   align-items:center;
 
    .skill__item-title{
       font-size: .9em;
@@ -24,48 +23,19 @@
    }
 }
 
+.skill__title{
+   color: rgb(var(--primary));
+   font-size: 1.2em;
+   text-align: center;
+}
+
 .skill__card{
-   position: relative;
-   background: linear-gradient(to bottom, rgb(var(--primary)/.8), rgb(var(--primary)/.5), rgb(var(--bg)));
-
-   &::after{
-      background: linear-gradient(to bottom, rgb(var(--bg-light)), rgb(var(--bg-light)), rgb(var(--bg)));
-      display: block;
-      content: "";
-      width: calc(100% - 2px);
-      height: calc(100% - 1px);
-      position: absolute;
-      top: 1px;
-      left: 1px;
-      z-index: -1;
-   }
-
-   .skill__card-title{
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-weight: 600;
-      font-size: 1em;
-      text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: .5em;
-      padding-bottom: .7em;
-      width: 150px;
-      background-color: rgb(var(--bg));
-      color: rgb(var(--primary));
-      border: 2px solid rgb(var(--primary)/.6);
-   }
-
    .skill__card-body{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       row-gap: 30px;
       column-gap:10px;
-      padding: 2em;
-      padding-top: 3em;
+      padding-top: 1.5em;
    }
 
    .skill__icon{

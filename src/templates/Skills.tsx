@@ -41,17 +41,19 @@ export function SkillCardItem({title, skills, delay}:SkillItemProps){
    const currentTitleStyle = titleStyles[title.toLowerCase() as keyof typeof titleStyles];
 
    return (
-      <div ref={ref} className={`skill__card fade ${observerClass} ${currentTitleStyle}`} style={{transitionDelay: delay}}>
-         <div className={`skill__card-title`}>{title}</div>
-         <div className="skill__card-body">
-            {skills?.map(skill => (
-               <div key={skill.id} className="skill__item">
-                  <div className="skill__icon">
-                     <Icon name={skill?.icon}/>
+      <div ref={ref} className={`fade ${observerClass} ${currentTitleStyle}`} style={{transitionDelay: delay}}>
+         <div className={`skill__title`}>{title}</div>
+         <div className="skill__card">
+            <div className="skill__card-body">
+               {skills?.map(skill => (
+                  <div key={skill.id} className="skill__item">
+                     <div className="skill__icon">
+                        <Icon name={skill?.icon}/>
+                     </div>
+                     <div className="skill__item-title">{skill.title}</div>
                   </div>
-                  <div className="skill__item-title">{skill.title}</div>
-               </div>
-            ))}
+               ))}
+            </div>
          </div>
       </div>
    )
