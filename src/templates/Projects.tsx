@@ -32,21 +32,45 @@ export function ProjectItem({data, index}:projectItemProps){
    const observerClass = inView ? 'in':''
 
    return <>
-      <div key={`project-${data.id}`} className={`project fade ${observerClass}`} ref={ref} style={{transitionDelay: `.${index - 1}s`}}>
+      <div key={`project-${data.id}`} className={`project__card fade ${observerClass}`} ref={ref} style={{transitionDelay: `.${index - 1}s`}}>
+         <h5>{data.title}</h5>
          <div className="project__images">
             <img src={`/images/projects/${data.coverImage}`} alt="image__project" />
          </div>
-         <div className="project__body">
-            <p className="text-primary hide-mobil">Développeur fullstack</p>
-            <div className="project__title">{data.title}</div>
-            <div className="project__technos">
-               {data?.technos?.map((techno:string) => (
-                  <span key={`${techno}-${data.id}}`} className="badge badge-primary">{techno}</span>
-               ))}
+         <div className="project__card-body mt-2">
+            <div className="flex space-between">
+               <div className="text-primary hide-mobil">Développeur fullstack</div>
+               <div className="project__card-techno">
+                  {data?.technos?.map((techno:string) => (
+                     <span key={`${techno}-${data.id}}`} className="">{techno}</span>
+                  ))}
+               </div>
             </div>
             <div className="project__description">{data.description}</div>
             <ShowProjectAction project={data}/>
          </div>
       </div>
    </>
+}
+
+export function ProjectCard(){
+   return (
+   <div className="project__card">
+      <div>
+         <h5 className="">GMAO</h5>
+      </div>
+
+      <div className="project__image">
+         <img src={`/images/projects/gmao1.png`} alt="image__project" />
+      </div>
+      <div className="project__card-body mt-2">
+         <p className="flex space-between  text-small">
+            <div className="hide-mobil">Développeur fullstack</div>
+            <div className="text-primary">Symfony | React</div>
+         </p>
+         <p className="mt-4">Application complète pour optimiser les processus de maintenance avec Symfony et React.</p>
+         <ShowProjectAction project={{}}/>
+      </div>
+   </div>
+   )
 }

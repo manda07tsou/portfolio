@@ -2,16 +2,16 @@
    {
       "id":1,
       "title": "Gmao mei",
-      "technos": ["Symfony","React","Meilisearch","Mysql"],
+      "technos": ["Symfony","React","Mysql"],
       "coverImage":"gmao1.png",
       "images":["gmao1.png","gmao2.png","gmao3.png","gmao4.png","gmao5.png"],
-      "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
+      "description":"Application complète pour optimiser les processus de maintenance d'un société dans le domaine du pétrole.",
       "content":"gmao.md"
    },
    {
       "id":2,
       "title": "Artiamour",
-      "technos": ["Symfony","React","Meilisearch","Mysql"],
+      "technos": ["Symfony","React","Mysql"],
       "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
       "coverImage":"artiamour2.png",
       "images":["artiamour.png","artiamour1.png","artiamour2.png"],
@@ -20,7 +20,7 @@
    {
       "id":3,
       "title": "Université",
-      "technos": ["Symfony","React","Meilisearch","Mysql"],
+      "technos": ["Symfony","React","Mysql"],
       "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
       "roles":"En tant que développeur fullstack Symfony et React, j’ai conçu et mis en place une API robuste avec API Platform, garantissant des échanges de données sécurisés et performants. Côté frontend, j’ai développé une interface utilisateur moderne et responsive avec React, afin d’assurer une expérience fluide et adaptée à tous les supports. Mon travail a permis de relier efficacement la logique métier du backend avec une interface intuitive pour les utilisateurs.",
       "coverImage":"gmao2.png",

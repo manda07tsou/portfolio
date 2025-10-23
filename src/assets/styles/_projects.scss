@@ -1,7 +1,7 @@
 //mobil
 .project__grid{
    display: grid;
-   gap: 3em;
+   gap: 1.5em;
 }
 
 .project{
@@ -26,6 +26,13 @@
    gap: 10px;
    flex-wrap: wrap;
    margin: 10px 0;
+}
+
+.project__card-techno *:not(:last-child)::after{
+   display: inline-block;
+   content: "|";
+   margin: 0 3px;
+
 }
 
 .project__meta{
@@ -204,4 +211,54 @@
       column-gap:50px;
       padding-top: 2em;
    }
+
+   .project__grid{
+      grid-template-columns: repeat(3,1fr);
+   }
+}
+
+.project__card{
+   padding: 1.5em;
+   padding-top: 0;
+   border-radius:5px;
+   overflow: hidden;
+   background-color:rgb(0, 39, 54);
+
+   img{
+      border-radius:5px;
+   }
+
+   &:hover{
+      .project__image::after{
+         transition: .3s;
+         background: rgb(0 39 54/.4);
+      top: 0;
+
+      }
+
+      .project__image img{
+         transition: .3s ease-in-out;
+         transform: scale(1.08);
+      }
+   }
+}
+
+.project__image{
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+   &::after{
+      transition: .3s;
+      position: absolute;
+      top: 0;
+      display: block;
+      content:"";
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+   }
+}
+
+.project__card-body{
+   // padding: 1em 1em 2em 1em;
 }

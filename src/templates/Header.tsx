@@ -22,7 +22,7 @@ export function Header(){
    return (
       <div className="header__container">
          <header className={`header`}>
-            <div className="logo">Rhj</div>
+            <a href="#home" className="logo">&lt; Rhj /&gt;</a>
             <div className="sidebar">
                <div className="mobil__sidebar">
                   <div className="logo">Rhj</div>

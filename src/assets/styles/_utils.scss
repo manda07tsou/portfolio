@@ -17,7 +17,7 @@
 }
 
 .text-small{
-    font-size: .9em;
+    font-size: .85em;
 }
 
 .text-800{
@@ -110,6 +110,10 @@
 .flex{
     display: flex;
     align-items: center;
+}
+
+.space-between{
+    justify-content: space-between;
 }
 
 .text-underlined{
