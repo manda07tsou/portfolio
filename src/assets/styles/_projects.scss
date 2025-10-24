@@ -1,187 +1,23 @@
-//mobil
 .project__grid{
    display: grid;
-   gap: 1.5em;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap: 2em;
 }
 
-.project{
-   transition: .3s;
-   overflow: hidden;
+.project__card{
    background-color: rgb(var(--bg-light));
+   border-radius: 8px;
+   overflow: hidden;
 }
 
-.project__body{
-   transition: .5s;
-   bottom: 0;
-   padding: 1.5em 1.2em;
-}
-
-.project__title{
-   font-size: 1.4em;
-   font-weight: 600;
-}
-
-.project__technos{
-   display: flex;
-   gap: 10px;
-   flex-wrap: wrap;
-   margin: 10px 0;
-}
-
-.project__card-techno *:not(:last-child)::after{
-   display: inline-block;
-   content: "|";
-   margin: 0 3px;
-
-}
-
-.project__meta{
-   position: absolute;
-   inset: 0;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-color: rgba(0,0,0, .4);
-   transform: translateX(-100%);
-}
-
-.project__detail{
-   padding: 100px var(--container-padding);
-}
-
-
-.project:hover{
-   border:1px solid var(--primary);
-
-   .project__images{
-      *:nth-child(1){
-         transition: .2s ease-in;
-         top: -20px;
-         left: 20px;
-      }
-
-      *:nth-child(2){
-         transition: .1s ease-in;
-         top: -10px;
-         left: 10px;
-      }
-   }
-}
-
-
-.project__images{
-   img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius:5px;
-   }
-}
-
-.project__images-grid{
-   display: grid;
-   grid-template-columns: 2fr 1fr;
-   gap: 6px;
-
-   img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-   }
-}
-
-.project__detail-header{
-   border-bottom: 1px solid rgb(var(--primary));
-   padding-bottom: 2em;
-}
-
-.project-dialog{
-   max-height: 100%!important;
-   animation: dialogAnimation .2s;
-   background-color: rgb(var(--bg)/.9)!important;
+.project__card-body{
+   padding: 1em;
+   padding-top: .5em;
 }
 
 .project__description{
-   p{
-      line-height: 1.8em;
-   }
-
-   img{
-      width: 200px;
-   }
+   margin: 1em 0;
 }
-
-@keyframes dialogAnimation {
-   0%{
-      transform: scale(0);
-      opacity: 0;
-   }
-
-   100%{
-      transform: scale(100%);
-      opacity: 1;
-   }
-}
-
-@media (min-width: 900px){
-   .project{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      align-items: center;
-      padding: 1.5em;
-      background-color: transparent;
-
-      &::after{
-         display: block;
-         content: "";
-         width: 60%;
-         height: 100%;
-         position: absolute;
-         background: linear-gradient(to right, rgb(var(--bg-light)),  rgb(var(--bg-light)), rgb(var(--primary)/.18));
-         z-index: -1;
-      }
-
-   }
-
-   .project:hover{
-      transition: .3s;
-      &::after{
-         background-color: rgb(var(--bg-light)/.5);
-      }
-   }
-
-   .project:nth-child(odd){
-      padding-left: 0px;
-      
-      &::after{
-         border-left: 5px solid rgb(var(--primary)/.3);
-         background: linear-gradient(to left, rgb(var(--bg-light)/.8) ,rgb(var(--bg-light)/.8) , rgb(var(--primary)/.15));
-         right: 0;
-      }
-   }
-
-   .project:nth-child(even){
-
-      &::after{
-         border-right: 5px solid rgb(var(--primary)/.3);
-      }
-
-      .project__images{
-         grid-column-start: 2;
-         grid-row-start: 1;
-      }
-   }
-
-   .project__title{
-      font-size: 2.4em;
-   }
-   
-   .project__description{
-      padding: .6em 0px;
-   }
-}
-
 .btn-show{
    $color: rgb(var(--primary));
    border:2px solid $color;
@@ -202,63 +38,29 @@
    }
 }
 
-//pc
-@media (min-width: 1140px){
+.project-dialog{
+   max-height: 100vh!important;
+   padding: var(--container-padding);
+   padding-top: 100px;
+}
+
+@media (min-width: 1200px){
    .project__detail-body{
       display: grid;
-      align-items: start;
-      grid-template-columns: 4fr 3fr;
-      column-gap:50px;
-      padding-top: 2em;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
    }
 
-   .project__grid{
-      grid-template-columns: repeat(3,1fr);
-   }
-}
-
-.project__card{
-   padding: 1.5em;
-   padding-top: 0;
-   border-radius:5px;
-   overflow: hidden;
-   background-color:rgb(0, 39, 54);
+   .project__images-grid{
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 6px;
 
    img{
-      border-radius:5px;
-   }
-
-   &:hover{
-      .project__image::after{
-         transition: .3s;
-         background: rgb(0 39 54/.4);
-      top: 0;
-
-      }
-
-      .project__image img{
-         transition: .3s ease-in-out;
-         transform: scale(1.08);
-      }
-   }
-}
-
-.project__image{
-   width: 100%;
-   overflow: hidden;
-   position: relative;
-   &::after{
-      transition: .3s;
-      position: absolute;
-      top: 0;
-      display: block;
-      content:"";
       width: 100%;
       height: 100%;
-      z-index: 1;
+      object-fit: cover;
    }
 }
 
-.project__card-body{
-   // padding: 1em 1em 2em 1em;
 }

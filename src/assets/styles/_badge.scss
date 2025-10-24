@@ -1,13 +1,14 @@
 .badge{
-   padding: .2em .6em;
-   border-radius: 50px;
-   font-size: .75em;
+   padding: .5em 1em;
+   border-radius: 5px;
+   font-size: .85em;
    font-weight: bold;
+   margin-right: 3px;
 }
 
 .badge-primary{
-   background-color: rgb(16, 42, 161);
-   // color: rgb(var(--bg-light));
+   background-color: rgb(58, 65, 72);
+   color: rgb(var(--primary));
 }
 
 .badge-warning{

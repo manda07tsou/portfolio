@@ -5,53 +5,30 @@
    row-gap: 60px;
 }
 
-
+.skill__card-body{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 2em;
+   margin-top: 2em;
+}
 .skill__item{
    display: flex;
-   flex-direction: column;
-   align-items:center;
+   align-items: center;
+   gap: .5em;
+}
 
-   .skill__item-title{
-      font-size: .9em;
-      font-weight: 500;
-   }
-
-   .icon{
-      color: rgb(var(--primary));
-      width:2em;
-      height: 2em;
-   }
+.skill__item-title{
+   font-size: 1.2em;
 }
 
 .skill__title{
-   color: rgb(var(--primary));
-   font-size: 1.2em;
-   text-align: center;
+   font-weight: 600;
+   border-bottom: 2px solid rgb(var(--primary)/.5);
+   padding-bottom: 1em;
 }
 
-.skill__card{
-   .skill__card-body{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      row-gap: 30px;
-      column-gap:10px;
-      padding-top: 1.5em;
-   }
-
-   .skill__icon{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: rgb(var(--bg-light)/.3);
-   }
-
-   .icon{
-      background-color: transparent;
-      color: rgb(var(--primary));
-      width:2em;
-      height: 2em;
-   }
+.skill__icon .icon{
+   display: block;
+   width: 1.6em;
+   height: 1.6em;
 }
