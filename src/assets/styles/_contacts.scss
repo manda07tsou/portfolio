@@ -11,22 +11,38 @@
 }
 
 .contact__item{
+   display: flex;
+   align-items: center;
+   gap: 1em;
    padding: 1em;
    background-color: rgb(var(--bg-light));
    border-radius:4px 4px 0 0;
    margin-bottom: 1em;
    border-bottom: 4px solid rgb(var(--bg-light));
 
+   .contact__item-icon{
+      background-color: rgb(var(--primary)/.2);
+      color: rgb(var(--primary));
+      padding: .8em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius:50%;
+   }
+
    .icon{
-      width: 1.4em;
-      height: 1.4em;
-      margin-right: .3em;
+      width: 2em;
+      height: 2em;
    }
 }
 
-.contact__info{
-   font-size: 1.1em;
+.contact__item-info{
+   font-size: 1em;
    margin-top: .2em;
+}
+
+.contact__item-title{
+   font-size: .85em;
 }
 
 .contact__box-body{
@@ -41,8 +57,9 @@
    .contact__box-header{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      column-gap: 1em;
+      gap: 1em;
       padding: 2em;
+
    }
 
    .contact__item{

@@ -19,9 +19,7 @@
 }
 
 .btn-primary{
-   background-color: rgb(var(--primary));
-   color: rgb(var(--primary-inversed));
-   border-color: rgb(var(--primary));
+   background-color: rgb(var(--primary)/.6);
 
    &:disabled{
       background-color: rgb(var(--primary)/.2);

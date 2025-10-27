@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, type ReactNode } from "react";
 import { Icon } from "../components/icons/icon";
 import emailjs from "@emailjs/browser";
 import { Spinner } from "../components/spinner/spinner";
@@ -34,23 +34,10 @@ export function Contacts(){
          </div>
          <div className="contact__box">
             <div className="contact__box-header">
-               <div className="contact__item">
-                  <p className="text-primary text-small flex">
-                     <Icon name={"icon-mail"}/>
-                     E-mail
-                  </p>
-                  <div className="contact__info">rhjmanda@gmail.com</div>
-               </div>
-               <div className="contact__item">
-                  <p className="text-primary text-small flex">
-                     <Icon name={"icon-phone"}/>
-                     Télephone
-                  </p>
-                  <div className="contact__info">
-                     <div>+261 38 71 697 95</div>
-                     <div>+261 32 74 285 37</div>
-                  </div>
-               </div>
+               <ContactItemCard title="E-mail" icon="icon-mail">rhjmanda@gmail.com</ContactItemCard>
+               <ContactItemCard title="Téléphone" icon="icon-phone">+261 38 71 697 95</ContactItemCard>
+               <ContactItemCard title="Github" icon="icon-github"><a href="https://github.com/manda07tsou" target="blank">github.com/manda07tsou</a></ContactItemCard>
+               <ContactItemCard title="Adresse" icon="icon-location">Tanjombato, Antananarivo, Madagascar</ContactItemCard>
             </div>
             <div className="contact__box-body">
                <div className="contact__form">
@@ -87,4 +74,27 @@ export function Contacts(){
          </div>
       </div>
    </>
+}
+
+interface ContactItemCardProps {
+  title: string;
+  icon: string;
+  children: ReactNode;
+}
+export function ContactItemCard({
+   title,
+   icon,
+   children
+}: ContactItemCardProps){
+   return (
+      <div className="contact__item">
+         <div className="contact__item-icon">
+            <Icon name={icon}/>
+         </div>
+         <div>
+            <div className="contact__item-title">{title}</div>
+            <div className="contact__item-info">{children}</div>
+         </div>
+      </div>
+   )
 }
