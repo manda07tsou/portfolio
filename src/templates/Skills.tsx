@@ -44,7 +44,7 @@ export function SkillCardItem({title, skills, delay,icon}:SkillItemProps){
       <div ref={ref} className={`skill__card fade ${observerClass} ${currentTitleStyle}`} style={{transitionDelay: delay}}>
          <div className="skill__card-header">
             <div className="skill__card-header-img">
-               <img src={`/public/${icon}`} alt="" />
+               <img src={`/${icon}`} alt="" />
             </div>
             <div className={`skill__card-title`}>{title}</div>
          </div>
