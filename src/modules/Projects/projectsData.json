@@ -12,7 +12,7 @@
       "id":2,
       "title": "Artiamour",
       "technos": ["Symfony","React","Mysql"],
-      "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
+      "description":"Artiamour est un site web statique conçu pour promouvoir les produits d’une start-up d’artisanat. Le projet inclut également une backoffice dédiée à la gestion et à l’administration des produits.",
       "coverImage":"artiamour2.png",
       "images":["artiamour.png","artiamour1.png","artiamour2.png"],
       "content":"artiamour.md"
