@@ -5,14 +5,14 @@
       "technos": ["Symfony","React","Mysql"],
       "coverImage":"gmao1.png",
       "images":["gmao1.png","gmao2.png","gmao3.png","gmao4.png","gmao5.png"],
-      "description":"Application complète pour optimiser les processus de maintenance d'un société dans le domaine du pétrole.",
+      "description":"Application web complète développée pour une société pétrolière, couvrant la gestion des maintenances, des véhicules, du personnel et des pièces, avec un suivi en temps réel des opérations.",
       "content":"gmao.md"
    },
    {
       "id":2,
       "title": "Artiamour",
       "technos": ["Symfony","React","Mysql"],
-      "description":"Artiamour est un site web statique conçu pour promouvoir les produits d’une start-up d’artisanat. Le projet inclut également une backoffice dédiée à la gestion et à l’administration des produits.",
+      "description":"Artiamour est un site web statique avec un espace d’administration, conçu pour promouvoir les créations artisanales d’une start-up et faciliter la gestion de ses produits.",
       "coverImage":"artiamour2.png",
       "images":["artiamour.png","artiamour1.png","artiamour2.png"],
       "content":"artiamour.md"
@@ -21,7 +21,7 @@
       "id":3,
       "title": "Université",
       "technos": ["Symfony","React","Mysql"],
-      "description":"Application complète pour optimiser les processus de maintenance avec Symfony et React.",
+      "description":"Plateforme web permettant aux établissements universitaires de se faire connaître et aux étudiants de les découvrir facilement.",
       "roles":"En tant que développeur fullstack Symfony et React, j’ai conçu et mis en place une API robuste avec API Platform, garantissant des échanges de données sécurisés et performants. Côté frontend, j’ai développé une interface utilisateur moderne et responsive avec React, afin d’assurer une expérience fluide et adaptée à tous les supports. Mon travail a permis de relier efficacement la logique métier du backend avec une interface intuitive pour les utilisateurs.",
       "coverImage":"gmao2.png",
       "images":["gmao1.png","gmao2.png"],

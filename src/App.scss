@@ -45,7 +45,8 @@ body{
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
-  color: rgb(var(--color));
+  // color: rgb(var(--color));
+  color: rgb(var(--color)/.75);
   line-height: 1.6;
   width: 100%;
   min-height: 100vh;

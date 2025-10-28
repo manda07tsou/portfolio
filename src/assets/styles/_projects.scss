@@ -8,11 +8,16 @@
    background-color: var(--primary-03);
    border-radius: 8px;
    overflow: hidden;
+   padding: 1em;
+}
+
+.project__images{
+   overflow: hidden;
+   border-radius:5px 5px 0 0;
 }
 
 .project__card-body{
-   padding: 1em;
-   padding-top: .5em;
+   padding-top: .3em;
 }
 
 .project__description{
@@ -52,15 +57,15 @@
    }
 
    .project__images-grid{
-   display: grid;
-   grid-template-columns: 2fr 1fr;
-   gap: 6px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 6px;
 
-   img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      img{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
    }
-}
 
 }

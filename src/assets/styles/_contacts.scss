@@ -20,7 +20,7 @@
    border-bottom: 4px solid rgb(var(--bg-light));
 
    .contact__item-icon{
-      background-color: rgb(var(--primary)/.2);
+      background-color: rgb(var(--primary)/.16);
       color: rgb(var(--primary));
       padding: .8em;
       display: flex;
@@ -36,8 +36,8 @@
 }
 
 .contact__item-info{
-   font-size: 1em;
    margin-top: .2em;
+   color: rgb(var(--color));
 }
 
 .contact__item-title{
