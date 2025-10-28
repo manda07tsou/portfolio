@@ -92,7 +92,7 @@ export function ContactItemCard({
             <Icon name={icon}/>
          </div>
          <div>
-            <div className="contact__item-title">{title}</div>
+            <div className="contact__item-title text-800">{title}</div>
             <div className="contact__item-info">{children}</div>
          </div>
       </div>

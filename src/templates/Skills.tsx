@@ -13,6 +13,8 @@ export function Skills(){
    const observerClass = inView ? "in":""
 
    return <section className="section skills" id="skills">
+      <div className="test"></div>
+
       <div className="section__header observe">
          <div className="section__subtitle" style={{fontSize: "1.2em"}}>Frameworks & langages</div>
          <div className={`section__title fade ${observerClass}`} ref={ref}>Mes compétences</div>

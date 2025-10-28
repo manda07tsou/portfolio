@@ -4,6 +4,7 @@ import { Card } from "../components/Card/Card"
 import { useEffect, useRef } from "react"
 import hljs from 'highlight.js';
 import 'highlight.js/styles/atom-one-dark.css';
+import { Icon } from "../components/icons/icon";
 
 export function Hero(){
    const {ref, inView}= useInView(observerOptions)
@@ -27,16 +28,30 @@ export function Hero(){
                <div className={`fade ${observerClass}`} ref={ref}  style={{transitionDelay: ".1s"}}> Mandaniaina<span className="text"> Vonintsoa</span></div>
             </div>
             <div className={`hero__subtitle fade text-800 ${observerClass}`} style={{transitionDelay: ".2s"}}>Développeur Symfony / React</div>
-            <a href="#contacts" className="btn btn-primary mt-3">Me contacter</a>
+            <a href="#contacts" className="btn btn-primary btn-test mt-3">Me contacter</a>
          {/* </Card> */}
       </div>
       <div className="code__highlight">
+         <div className="hero__icon hero__icon-1">
+            <Icon name="icon-symfony"></Icon>
+         </div>
+         <div className="hero__icon hero__icon-2">
+            <Icon name="icon-react"></Icon>
+         </div>
+         <div className="hero__icon hero__icon-3">
+            <Icon name="icon-javascript"></Icon>
+         </div>
          <Card>
             <pre>
                <code ref={codeRef}>
-            {`function hello() {
-   console.log("Welcome to my portfolio!");
-}`}
+            
+            {`const about = {
+      name: "Rahajanirina Mandaniaina Vonintsoa Fitiavana",
+      job: "Web developer",
+      skills: "React, Symfony"
+   }
+console.log(\`A propos de moi : + \${about}\`)
+`}
                </code>
             </pre>
          </Card>

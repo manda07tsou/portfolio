@@ -5,12 +5,14 @@
    row-gap: 60px;
 }
 
+
 .skill__card-body{
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 2em;
    margin-top: 2em;
 }
+
 .skill__item{
    display: flex;
    align-items: center;

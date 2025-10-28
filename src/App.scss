@@ -45,10 +45,13 @@ body{
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 15px;
-  background-color: rgb(var(--bg));
   color: rgb(var(--color));
   line-height: 1.6;
   width: 100%;
   min-height: 100vh;
   position: relative;
+  background: 
+    radial-gradient(ellipse 700px 450px at 1250px 400px, rgb(187 51 255/.3), transparent),
+    // radial-gradient(ellipse 500px 500px at 300px 1400px, rgb(213 128 255/.4), transparent),
+    rgb(var(--bg));
 }

@@ -22,7 +22,8 @@ export function Header(){
    return (
       <div className="header__container">
          <header className={`header`}>
-            <a href="#home" className="logo">&lt; Rhj /&gt;</a>
+            {/* <a href="#home" className="logo">&lt; Rhj /&gt;</a> */}
+            <a href="#home" className="logo">&#123;Rhj&#125;</a>
             <div className="sidebar">
                <div className="mobil__sidebar">
                   <div className="logo">Rhj</div>
