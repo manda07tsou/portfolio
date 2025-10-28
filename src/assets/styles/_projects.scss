@@ -8,7 +8,6 @@
    background-color: var(--primary-03);
    border-radius: 8px;
    overflow: hidden;
-   padding: 1em;
 }
 
 .project__images{
@@ -17,12 +16,34 @@
 }
 
 .project__card-body{
+   position: relative;
+   overflow: hidden;
+   padding: 1em;
    padding-top: .3em;
+
+
+   &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+         radial-gradient(ellipse 100% 90% at top left, rgb(var(--primary)/.2), rgb(187 51 255/.05), transparent),
+         radial-gradient(ellipse 100% 90% at bottom right, rgb(var(--primary)/.2), transparent)
+      ;
+      opacity: 0;
+      transition: opacity .3s ease-in;
+      pointer-events: none;
+   }
+
+   &:hover::before{
+      opacity: 1;
+   }
 }
 
 .project__description{
    margin: 1em 0;
 }
+
 .btn-show{
    $color: rgb(var(--primary));
    border:2px solid $color;

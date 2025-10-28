@@ -36,7 +36,7 @@ export function ProjectItem({data, index}:projectItemProps){
          <div className="project__images">
             <img src={`/images/projects/${data.coverImage}`} alt="image__project" />
          </div>
-         <div className="project__card-body mt-2">
+         <div className="project__card-body">
             <h5>{data.title}</h5>
             <div className=" hide-mobil text-small text-800 mb-1">Développeur fullstack</div>
             <div className="project__card-techno pt-1">
