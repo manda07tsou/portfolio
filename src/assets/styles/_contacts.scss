@@ -1,5 +1,4 @@
 .contact__box{
-   background-color: rgb(var(--bg-light)/.5);
    border: 1px solid rgb(var(--border)/.15);
    margin-top: 20px;
    border-radius: 8px;
@@ -15,7 +14,7 @@
    align-items: center;
    gap: 1em;
    padding: 1em;
-   background-color: rgb(var(--primary)/.03);
+   background-color: var(--primary-03);
    border-radius:4px 4px 0 0;
    margin-bottom: 1em;
    border-bottom: 4px solid rgb(var(--bg-light));
@@ -46,7 +45,7 @@
 }
 
 .contact__box-body{
-   background-color: rgb(var(--primary)/.03);
+   background-color: var(--primary-03);
    padding: 2em 1em;
    margin: 0;
    border-radius: 10px 10px 0 0;   
