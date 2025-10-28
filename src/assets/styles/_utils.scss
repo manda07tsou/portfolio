@@ -121,8 +121,8 @@
         display: block;
         content: "";
         width: 50%;
-        height: 5px;
-        background-color: rgb(var(--primary));
+        height: 3px;
+        background-color: rgb(var(--primary)/.8);
         transform: skew(-35deg);
         margin-top: 15px;
     }

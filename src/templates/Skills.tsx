@@ -13,8 +13,6 @@ export function Skills(){
    const observerClass = inView ? "in":""
 
    return <section className="section skills" id="skills">
-      <div className="test"></div>
-
       <div className="section__header observe">
          <div className="section__subtitle" style={{fontSize: "1.2em"}}>Frameworks & langages</div>
          <div className={`section__title fade ${observerClass}`} ref={ref}>Mes compétences</div>
@@ -28,9 +26,10 @@ export function Skills(){
 interface SkillItemProps{
    title:string,
    skills: Skill[],
-   delay: string
+   delay: string,
+   icon: string
 }
-export function SkillCardItem({title, skills, delay}:SkillItemProps){
+export function SkillCardItem({title, skills, delay,icon}:SkillItemProps){
    const  { ref , inView }  =  useInView (observerOptions);
    const observerClass = inView ? "in":""
    const titleStyles = {
@@ -42,10 +41,14 @@ export function SkillCardItem({title, skills, delay}:SkillItemProps){
    const currentTitleStyle = titleStyles[title.toLowerCase() as keyof typeof titleStyles];
 
    return (
-      <div ref={ref} className={`fade ${observerClass} ${currentTitleStyle}`} style={{transitionDelay: delay}}>
-         <div className={`skill__title`}>{title}</div>
-         <div className="skill__card">
-            <div className="skill__card-body">
+      <div ref={ref} className={`skill__card fade ${observerClass} ${currentTitleStyle}`} style={{transitionDelay: delay}}>
+         <div className="skill__card-header">
+            <div className="skill__card-header-img">
+               <img src={`/public/${icon}`} alt="" />
+            </div>
+            <div className={`skill__card-title`}>{title}</div>
+         </div>
+         <div className="skill__card-body">
                {skills?.map(skill => (
                   <div key={skill.id} className="skill__item">
                      <div className="skill__icon">
@@ -54,7 +57,6 @@ export function SkillCardItem({title, skills, delay}:SkillItemProps){
                      <div className="skill__item-title">{skill.title}</div>
                   </div>
                ))}
-            </div>
          </div>
       </div>
    )
@@ -63,9 +65,9 @@ export function SkillCardItem({title, skills, delay}:SkillItemProps){
 export function SkillCard(){
    return (
       <div className="skill__grid">
-         {skills?.frontend && <SkillCardItem title="Frontend" skills={skills?.frontend} delay="0s"/>}
-         {skills?.frontend && <SkillCardItem title="Backend" skills={skills?.backend} delay=".1s"/>}
-         {skills?.frontend && <SkillCardItem title="Outils" skills={skills?.outils} delay=".2s"/>}
+         {skills?.frontend && <SkillCardItem title="Frontend" skills={skills?.frontend} icon="frontend-icon.png" delay="0s"/>}
+         {skills?.frontend && <SkillCardItem title="Backend" skills={skills?.backend} icon="backend-icon.png" delay=".1s"/>}
+         {skills?.frontend && <SkillCardItem title="Outils" skills={skills?.outils} icon="tools-icon.png" delay=".2s"/>}
       </div>
    )
 }

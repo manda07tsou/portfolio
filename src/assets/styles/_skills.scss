@@ -1,32 +1,52 @@
 .skill__grid{
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-   column-gap: 4em;
+   column-gap: 5em;
    row-gap: 60px;
 }
 
 
+.skill__card-header{
+   display: flex;
+   align-items: center;
+   gap: .5em;
+
+   .skill__card-header-img{
+      padding: .5em;
+      background-color: rgb(var(--primary)/.2);
+      border-radius: 50%;
+   }
+
+   img{
+      width: 2.5em;
+   }
+}
+
+.skill__card-title{
+   font-size: 1.6em;
+   font-weight: 500;
+   color:#fff;
+}
+
 .skill__card-body{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   gap: 2em;
-   margin-top: 2em;
+   gap: 1.2em;
+   padding: 2em 0;
 }
 
 .skill__item{
    display: flex;
    align-items: center;
    gap: .5em;
+   color: rgb(var(--color)/.8);
+   background-color: rgb(var(--primary)/.05);
+   padding: .7em 1em;
+   border-radius: 5px;
 }
 
 .skill__item-title{
-   font-size: 1.2em;
-}
-
-.skill__title{
-   font-weight: 600;
-   border-bottom: 2px solid rgb(var(--primary)/.5);
-   padding-bottom: 1em;
+   font-size: 1.1em;
 }
 
 .skill__icon .icon{

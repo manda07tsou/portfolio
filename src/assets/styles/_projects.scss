@@ -5,7 +5,8 @@
 }
 
 .project__card{
-   background-color: rgb(var(--bg-light));
+   // background-color: rgb(var(--bg-light));
+   background-color: rgb(var(--primary)/.05);
    border-radius: 8px;
    overflow: hidden;
 }
