@@ -11,8 +11,8 @@ export function Projects(){
    return (
       <div className="section" id="projects">
          <div className="section__header">
-            <div className="section__subtitle">Projets marquants</div>
-            <div className={`section__title fade ${observerClass}`} ref={ref}>Mes réalisations</div>
+            <div className={`section__subtitle fade-bottom ${observerClass}`} ref={ref}>Projets marquants</div>
+            <div className={`section__title fade-bottom ${observerClass}`} ref={ref} style={{transitionDelay: '.15s'}}>Mes réalisations</div>
          </div>
          <div className="section__body project__grid">
             {projectsData.map((project, index:number) => (
@@ -30,9 +30,11 @@ interface projectItemProps{
 export function ProjectItem({data, index}:projectItemProps){
    const {ref, inView} = useInView(observerOptions)
    const observerClass = inView ? 'in':''
+   const delay = ['0s', '.15s','.3s'];
+   const transitionDelay = delay[index % 3]
 
    return <>
-      <div key={`project-${data.id}`} className={`project__card fade ${observerClass}`} ref={ref} style={{transitionDelay: `.${index - 1}s`}}>
+      <div key={`project-${data.id}`} className={`project__card fade-bottom ${observerClass}`} ref={ref} style={{transitionDelay: `${transitionDelay}`}}>
          <div className="project__images">
             <img src={`/images/projects/${data.coverImage}`} alt="image__project" />
          </div>

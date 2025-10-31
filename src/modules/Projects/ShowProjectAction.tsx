@@ -26,7 +26,8 @@ export function ShowProjectAction({project}:ShowProjectActionProps){
 
    return (
       <>
-         <button className="btn-show mt-3" onClick={handleOpen}>
+         <button className="btn btn-primary btn-small mt-3" onClick={handleOpen}>
+            Détail
             <Icon name="icon-arrowRight"></Icon>
          </button>
          <Dialog 

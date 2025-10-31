@@ -14,8 +14,8 @@ export function Skills(){
 
    return <section className="section skills" id="skills">
       <div className="section__header observe">
-         <div className="section__subtitle" style={{fontSize: "1.2em"}}>Frameworks & langages</div>
-         <div className={`section__title fade ${observerClass}`} ref={ref}>Mes compétences</div>
+         <div className={`section__subtitle fade-bottom ${observerClass}`} ref={ref} style={{fontSize: "1.2em"}}>Frameworks & langages</div>
+         <div className={`section__title fade-bottom ${observerClass}`} ref={ref} style={{transitionDelay: '.1s'}}>Mes compétences</div>
       </div>
       <div className="section__body" style={{marginTop: "60px"}}>
          <SkillCard/>
@@ -41,7 +41,7 @@ export function SkillCardItem({title, skills, delay,icon}:SkillItemProps){
    const currentTitleStyle = titleStyles[title.toLowerCase() as keyof typeof titleStyles];
 
    return (
-      <div ref={ref} className={`skill__card fade ${observerClass} ${currentTitleStyle}`} style={{transitionDelay: delay}}>
+      <div ref={ref} className={`skill__card fade-bottom ${observerClass} ${currentTitleStyle}`} style={{transitionDelay: delay}}>
          <div className="skill__card-header">
             <div className="skill__card-header-img">
                <img src={`/${icon}`} alt="" />
@@ -66,8 +66,8 @@ export function SkillCard(){
    return (
       <div className="skill__grid">
          {skills?.frontend && <SkillCardItem title="Frontend" skills={skills?.frontend} icon="frontend-icon.png" delay="0s"/>}
-         {skills?.frontend && <SkillCardItem title="Backend" skills={skills?.backend} icon="backend-icon.png" delay=".1s"/>}
-         {skills?.frontend && <SkillCardItem title="Outils" skills={skills?.outils} icon="tools-icon.png" delay=".2s"/>}
+         {skills?.frontend && <SkillCardItem title="Backend" skills={skills?.backend} icon="backend-icon.png" delay=".15s"/>}
+         {skills?.frontend && <SkillCardItem title="Outils" skills={skills?.outils} icon="tools-icon.png" delay=".3s"/>}
       </div>
    )
 }

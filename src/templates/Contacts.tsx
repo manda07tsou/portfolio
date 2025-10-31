@@ -3,8 +3,12 @@ import { Icon } from "../components/icons/icon";
 import emailjs from "@emailjs/browser";
 import { Spinner } from "../components/spinner/spinner";
 import toast from "react-hot-toast";
+import { useInView } from "react-intersection-observer";
+import { observerOptions } from "../config";
 
 export function Contacts(){
+   const {ref, inView}= useInView(observerOptions)
+   const observerClass = inView ? "in":""
    const formRef = useRef<HTMLFormElement>(null)
    const [isSubmitted, setIsSubmitted] = useState(false)
 
@@ -30,9 +34,9 @@ export function Contacts(){
    return <>
       <div className="section" id="contacts">
          <div className="section__header">
-            <div className="section__title">Me contacter</div>
+            <div className={`section__title fade-bottom ${observerClass}`} ref={ref}>Me contacter</div>
          </div>
-         <div className="contact__box">
+         <div className={`contact__box fade-bottom ${observerClass}`} style={{transitionDelay: '.15s'}} ref={ref}>
             <div className="contact__box-header">
                <ContactItemCard title="E-mail" icon="icon-mail">rhjmanda@gmail.com</ContactItemCard>
                <ContactItemCard title="Téléphone" icon="icon-phone">+261 38 71 697 95</ContactItemCard>

@@ -22,16 +22,16 @@ export function Hero(){
    return <section className="section hero" id="hero">
       <div className="hero__body">
          {/* <Card> */}
-            <h6 className="text-primary">Bonjour, je suis</h6>
+            <h6 className={`text-primary fade-bottom ${observerClass}`}>Bonjour, je suis</h6>
             <div className={`hero__title`}>
-               <div className={`uppercase fade ${observerClass}`} ref={ref}>RAHAJANIRINA</div> 
-               <div className={`fade ${observerClass}`} ref={ref}  style={{transitionDelay: ".1s"}}> Mandaniaina<span className="text"> Vonintsoa</span></div>
+               <div className={`uppercase fade-bottom ${observerClass}`} ref={ref} style={{transitionDelay: ".1s"}}>RAHAJANIRINA</div> 
+               <div className={`fade-bottom ${observerClass}`} ref={ref}  style={{transitionDelay: ".2s"}}> Mandaniaina<span className="text"> Vonintsoa</span></div>
             </div>
-            <div className={`hero__subtitle fade ${observerClass}`} style={{transitionDelay: ".2s"}}>Développeur Symfony / React</div>
-            <a href="#contacts" className="btn btn-primary btn-test mt-3">Me contacter</a>
+            <div className={`hero__subtitle fade-bottom ${observerClass}`} style={{transitionDelay: ".3s"}}>Développeur Symfony / React</div>
+            <a href="#contacts" className={`btn btn-primary btn-test mt-3 fade-bottom ${observerClass}`} style={{transitionDelay: ".4s"}}>Me contacter</a>
          {/* </Card> */}
       </div>
-      <div className="code__highlight">
+      <div className={`code__highlight fade-right ${observerClass}`} style={{transitionDelay: ".4s"}}>
          <div className="hero__icon hero__icon-1">
             <Icon name="icon-symfony"></Icon>
          </div>

@@ -18,8 +18,13 @@
    }
 }
 
+.btn-small{
+   padding: .5em 1em;
+   font-size: .6em;
+}
+
 .btn-primary{
-   background-color: rgb(var(--primary)/.9);
+   background-color: rgb(var(--primary));
    color: rgb(var(--primary-inversed));
 
    &:disabled{

@@ -50,24 +50,18 @@
    margin: 1em 0;
 }
 
-.btn-show{
-   $color: rgb(var(--primary));
-   border:2px solid $color;
-   color: $color;
-   width: 3em;
-   height: 3em;
-   border-radius:50%;
-   transition: .3s;
+.project__card{
+   .btn{
+      float: right;
+      display: flex;
+      align-items: center;
 
-   .icon{
-      width: 2em;
-      height: 2em;
+      .icon{
+         width: 2em;
+         height: 2em;
+      }
    }
 
-   &:hover{
-      background-color: $color;
-      color: rgb(56, 54, 54);
-   }
 }
 
 .project-dialog{

@@ -1,21 +1,45 @@
 .fade{
    opacity: 0;
-   transform: translateY(30px);
-   transition-duration: .5s;
+   transition-duration: .3s;
+   transition-timing-function: cubic-bezier(.5,0,0,1);
+}
+
+.fade-bottom{
+   opacity: 0;
+   transform: translateY(100px);
+   transition-duration: .3s;
+   transition-timing-function: cubic-bezier(.5,0,0,1);
+}
+
+.fade-right{
+   opacity: 0;
+   transform: translateX(100px);
+   transition-duration: .3s;
    transition-timing-function: cubic-bezier(.5,0,0,1);
 }
 
 .in{
    opacity: 1!important;
-   transform: translateY(0px)!important;
+   transform: translate(0px, 0px)!important;
 }
 
 .rotate{
    transform: rotateY(90deg);
-   transition-duration: .5s;
+   transition-duration: .3s;
 }
 
 .rotate-in{
    transform: rotateY(0);
+}
+
+@keyframes fadeOpacity {
+   0%{
+      opacity: 0;
+   }
+
+   100%{
+      opacity: 1;
+   }
+   
 }
 
