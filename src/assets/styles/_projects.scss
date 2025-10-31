@@ -18,14 +18,20 @@
 .project__card-body{
    position: relative;
    overflow: hidden;
+   height: 100%;
    padding: 1em;
    padding-top: .3em;
-
+   background: 
+      radial-gradient(ellipse 100% 90% at top left, rgb(var(--primary)/.2), rgb(187 51 255/.05), transparent),
+      radial-gradient(ellipse 100% 90% at bottom right, rgb(var(--primary)/.2), transparent)
+   ;
 
    &::before {
       content: '';
       position: absolute;
       inset: 0;
+      width: 100%;
+      height: 100%;
       background: 
          radial-gradient(ellipse 100% 90% at top left, rgb(var(--primary)/.2), rgb(187 51 255/.05), transparent),
          radial-gradient(ellipse 100% 90% at bottom right, rgb(var(--primary)/.2), transparent)
