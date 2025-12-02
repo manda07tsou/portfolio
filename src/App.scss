@@ -52,7 +52,7 @@ body{
   min-height: 100vh;
   position: relative;
   background: 
-    radial-gradient(ellipse 700px 450px at 1250px 400px, rgb(187 51 255/.3), transparent),
-    // radial-gradient(ellipse 500px 500px at 300px 1400px, rgb(213 128 255/.4), transparent),
+    radial-gradient(ellipse 700px 450px at 1250px 400px, rgb(77 77 255/.3), transparent),
+    radial-gradient(ellipse 900px 500px at 200px 1500px, rgb(255 77 148/.2), transparent),
     rgb(var(--bg));
 }
