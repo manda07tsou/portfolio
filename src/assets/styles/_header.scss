@@ -97,11 +97,12 @@
 
    .hero__icon{
       position: absolute;
-      background-color: rgb(var(--primary)/.3);
+      background-color: rgb(var(--primary)/.15);
+      box-shadow: 0 0 0 30px rgb(var(--primary)/.05);
       width: 60px;
       height: 60px;
       padding: 1em;
-      border-radius: 8px;
+      border-radius: 50%;
       transition: .3s ease-in-out;
 
 
