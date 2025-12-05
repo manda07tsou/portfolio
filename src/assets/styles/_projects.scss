@@ -32,7 +32,13 @@
    display: flex;
    align-items: center;
    font-size: 1em;
+   font-weight: 600;
+   transition: .3s;
 
+   &:hover{
+      filter: brightness(.7);
+   }
+   
    .icon{
       width: 1.2em;
       height: 1em;
