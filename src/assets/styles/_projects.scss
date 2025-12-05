@@ -1,53 +1,45 @@
 .project__grid{
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-   gap: 2em;
+   gap: 3em;
 }
 
 .project__card{
-   background-color: var(--primary-03);
    border-radius: 8px;
    overflow: hidden;
 }
 
 .project__images{
    overflow: hidden;
-   border-radius:5px 5px 0 0;
+   border-radius:5px;
+   height: 250px;
 }
 
 .project__card-body{
    position: relative;
    overflow: hidden;
    height: 100%;
-   padding: 1em;
    padding-top: .3em;
-   background: 
-      radial-gradient(ellipse 100% 90% at top left, rgb(var(--primary)/.2), rgb(187 51 255/.05), transparent),
-      radial-gradient(ellipse 100% 90% at bottom right, rgb(var(--primary)/.2), transparent)
-   ;
 
-   &::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      background: 
-         radial-gradient(ellipse 100% 90% at top left, rgb(var(--primary)/.2), rgb(187 51 255/.05), transparent),
-         radial-gradient(ellipse 100% 90% at bottom right, rgb(var(--primary)/.2), transparent)
-      ;
-      opacity: 0;
-      transition: opacity .3s ease-in;
-      pointer-events: none;
-   }
 
    &:hover::before{
       opacity: 1;
    }
 }
 
+.project__card-action{
+   color: rgb(var(--primary));
+   display: flex;
+   align-items: center;
+   font-size: 1em;
+
+   .icon{
+      width: 1.2em;
+      height: 1em;
+   }
+}
 .project__description{
-   margin: 1em 0;
+   margin: 1.5em 0;
 }
 
 .project__card{

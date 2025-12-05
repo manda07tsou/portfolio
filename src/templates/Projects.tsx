@@ -41,13 +41,15 @@ export function ProjectItem({data, index}:projectItemProps){
          <div className="project__card-body">
             <h5>{data.title}</h5>
             <div className=" hide-mobil text-small text-800 mb-1">Développeur fullstack</div>
-            <div className="project__card-techno pt-1">
+            <div className="project__card-techno pt-3">
                {data?.technos?.map((techno:string) => (
                   <span key={`${techno}-${data.id}}`} className="badge badge-primary">{techno}</span>
                ))}
             </div>
             <div className="project__description">{data.description}</div>
+            <div className="project__card-footer">
             <ShowProjectAction project={data}/>
+            </div>
          </div>
       </div>
    </>

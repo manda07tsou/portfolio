@@ -26,10 +26,10 @@ export function ShowProjectAction({project}:ShowProjectActionProps){
 
    return (
       <>
-         <button className="btn btn-primary btn-small mt-3" onClick={handleOpen}>
+         <a href="#" className="project__card-action" onClick={handleOpen}>
             Détail
             <Icon name="icon-arrowRight"></Icon>
-         </button>
+         </a>
          <Dialog 
             isOpen={isOpen} 
             onClose={handleClose}
