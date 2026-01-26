@@ -49,21 +49,31 @@
       },
       {
          "id":3,
+         "title": "Express",
+         "icon": "icon-express"
+      },
+      {
+         "id": 4,
+         "title": "Nodejs",
+         "icon": "icon-nodejs"
+      },
+      {
+         "id":5,
          "title":"Mysql",
          "icon": "icon-mysql"
       },
       {
-         "id":4,
+         "id":6,
          "title": "Postgresql",
          "icon": "icon-postgresql"
       },
       {
-         "id":5,
+         "id":7,
          "title": "Rest",
          "icon": "icon-apiRest"
       },
       {
-         "id":6,
+         "id":8,
          "title": "Meilisearch",
          "icon": "icon-meilisearch"
       }
@@ -94,6 +104,11 @@
          "id":5,
          "title": "Postman",
          "icon": "icon-postman"
+      },
+      {
+         "id":6,
+         "title": "Docker",
+         "icon": "icon-docker"
       }
    ]
 }
